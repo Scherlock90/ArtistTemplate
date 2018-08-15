@@ -214,6 +214,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1em;
+		text-align: -webkit-center;
 	}
 
 	h4 {
@@ -3167,6 +3168,7 @@ input, select, textarea {
 
 			#footer > .inner > * > :last-child {
 				margin-bottom: 0;
+				text-align: -webkit-center;
 			}
 
 			#footer > .inner section:nth-child(1) {
