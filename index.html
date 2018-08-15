@@ -17,19 +17,34 @@
 		<link rel="manifest" href="favicon/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+
+		<!-- script for adding foto? -->
+		<script type="text/javascript">
+			function insert(){
+				var src = document.getElementById("gamediv");
+				var img = document.createElement('img');
+				img.src = 'img/eqp/' + this.apparel + '/' + this.facing + '_idle.png';
+				document.getElementById('gamediv').appendChild(img)
+			}
+		 </script>
 	</head>
 	<body class="is-preload">
+		<div class="administrator">
+			<h10>
+				<a href="administratorPage.html">Strona administratora</a>
+			</h10>
+		</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+					<!-- <header id="header">
+						<div class="inner"> -->
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
+								<!-- <a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+								</a> -->
 
 							<!-- Nav -->
 								<!-- <div class="hide">
@@ -40,8 +55,8 @@
 									</nav>
 								</div> -->
 
-						</div>
-					</header>
+						<!-- </div>
+					</header> -->
 
 				<!-- Menu -->
 					<!-- <div class="hide">
@@ -62,9 +77,29 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Jest to strona poświęcona twórczości artystki <br> ze świętokrzyskiego Ewy Napory</h1>
-								<p>Ma w swoim dorobku wiele prac, które dotyczącą różnych gałęzi artystycznych o czym przekonasz się przeglądając poniższe kafaelki artystyczne</p>
+								<h1>Jest to strona poświęcona twórczości artystki <br> ze świętokrzyskiego p. Ewy Napory pseudonim artystyczny "Kaja"</h1>
+								<br>
+								<br>
 							</header>
+
+						<div class="information">
+								<span>
+									<img src="images/informationImage.jpg"
+								</span>
+								<h8 class="information">
+										&nbsp&nbsp&nbsp&nbsp&nbsp <strong>Ewa Napora</strong> pochodzi z województwa <a href="http://www.lubelskie.pl/"><strong>lubelskiego</strong></a>,
+										 a dokładniej z powiatu <a href="http://kontrast.janowlubelski.pl/"><strong>janowskiego</strong></a>. 
+										 Godnym uwagi jest fakt, że od młodzieńczych lat była zafascynowana sztuką. Warto również wspomnieć, 
+										 iż chętnie brała czynny udział w aktywności sportowej.
+										 Pochodzi z rodziny <strong>Borowskich</strong>, których członek brał udział w II wojnie światowej, za co został rozstrzelany przez hitlerowców w <Strong>Katyniu</Strong>.Następnie pośmiertnie przez prezydenta <Strong>Rzeczypospolitej Polskiej</Strong> awansowany na wyższy stopień wojskowy.
+										 <br> &nbsp&nbsp&nbsp&nbsp&nbsp Wychowała i wykształciła czwórkę dzieci oraz jest obecnie babcią dwóch wnuczek.	
+										 <br>
+										 <br/>
+										 <p> &nbsp&nbsp&nbsp&nbsp&nbsp Ma w swoim dorobku wiele prac, które dotyczącą różnych gałęzi artystycznych o czym przekonasz się przeglądając poniższe <strong>kafaelki artystyczne</strong></p>
+								</h8>
+						</div>
+							
+
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -201,13 +236,41 @@
 							</section>
 						</div>
 					</div>
+					
+					<!-- insert foto? -->
+			<!-- <div id="gamediv"> adding foto
+				<script type="text/javascript">
+					insert();
+				</script>
+			</div> -->
+
+			<!-- <p>Click the button to create an IMG element.</p>
+
+				<button onclick="myFunction()">Try it</button>
+
+				<script>
+				function myFunction() {
+					var x = document.createElement("IMG");
+					x.setAttribute("src", "/obraz1.jpg");
+					x.setAttribute("width", "304");
+					x.setAttribute("height", "228");
+					x.setAttribute("alt", "The Pulpit Rock");
+					document.body.appendChild(x);
+				}
+				</script> -->
+				<div class="adres">
+						<h11>
+								<p>Adres</p>
+						</h11>
+					</div>
+
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 							<section>
 								<h3>Bądźmy w kontakcie</h3>
-								<form method="post" action="#">
+								<form method="post" action="mailto:ewa-napora@o2.pl">
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Nazwisko i imię" />
@@ -242,9 +305,7 @@
 							</ul>
 						</div>
 					</footer>
-
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
