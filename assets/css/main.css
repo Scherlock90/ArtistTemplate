@@ -3330,6 +3330,13 @@ input, select, textarea {
 	font-style: unset;
 }
 
+.adresDivCenter {
+	text-align: center;
+}
+.adresDivRight {
+	text-align:right;
+}
+
 
 .a11 {
 	font-variant-caps: petite-caps;
@@ -3338,5 +3345,9 @@ input, select, textarea {
 	font-style: normal;
 	font-family: 'Times New Roman', Times, serif;	
 	color: darkslategrey; 	
+}
+.smallFontAdres {
+	font-size: 80%;
+	font-style: italic;	
 }
 
