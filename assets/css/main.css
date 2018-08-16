@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6,p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -3311,3 +3311,32 @@ input, select, textarea {
 			}
 
 		}
+
+		/* adres class */
+
+#adres {
+	background-color: silver;
+	box-sizing: border-box;
+	max-width: auto;
+	max-height: auto;
+}
+
+
+.adresDiv {
+	display: block;
+	text-align: left;
+	padding: 15px;
+	color: darkslategrey;
+	font-style: unset;
+}
+
+
+.a11 {
+	font-variant-caps: petite-caps;
+	text-align: center;
+	font-size: 40px;
+	font-style: normal;
+	font-family: 'Times New Roman', Times, serif;	
+	color: darkslategrey; 	
+}
+
