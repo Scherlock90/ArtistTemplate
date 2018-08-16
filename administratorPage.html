@@ -3,15 +3,41 @@
 <html>
 
 <head>
+        <title>Adminsitrator Page</title>
+        <link rel="stylesheet" href="assets/css/administratorPageStyle.css" />
 
 </head>
 
 <body>
     <h1>Adminsitrator Page</h1>
+    <form>
+       
+            <input type="file" accept="image/jpeg, image/png" multiple />
+            <br>
+
+            <!-- old -->
+            <!-- <img src="//:0" id="preview" />
+            <input type="file" id="imageFileInput" accept=".jpg, .jpeg, .png" /> -->
+		
+    </form>
+
+    <table class="images">
+			<thead>
+				<th>Time</th>
+				<th>Initial Size</th>
+				<th>Resized Size</th>
+				<th>Saving</th>
+				<th>Resized Image</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
 
 
-    <img src="//:0" id="preview" />
-    <input type="file" id="imageFileInput" accept=".jpg, .jpeg, .png" />
+   
+    
+    <!-- <button onclick="myFunction()">Pobierz</button>
     <script>
         document.getElementById('imageFileInput').addEventListener('change', function() {
             var img = this.files[0];          
@@ -70,14 +96,14 @@
                 callback && callback(canvas.toDataURL());
             };
         }
-    </script>
+    </script> -->
 
     <br>
     <br>
 
 
     <!-- <button onclick="functionAddingImages()">Dodaj zdjęcie</button> -->
-    <input type="file" onchange="previewFile()">
+    <!-- <input type="file" onchange="previewFile()">
     <br>
     <img src="" height="200" alt="Image preview...">
 
@@ -99,9 +125,9 @@
         }
 
         previewFile();  //calls the function named previewFile()
-    </script>
+    </script> -->
 
-    <p>Click the button to create an IMG element.</p>
+    <!-- <p>Click the button to create an IMG element.</p>
 
     <button onclick="myFunction()">Try it</button>
 
@@ -113,8 +139,9 @@
             x.setAttribute("height", "228");
             x.setAttribute("alt", "The Pulpit Rock");
             document.body.appendChild(x);
+            document.body.write(x);
         }
-    </script>
+    </script> -->
 
     <!-- <script>
 
@@ -161,7 +188,14 @@ function check_multifile_logo(file) {
     }
 }
     </script> -->
+<!--    
+<script src="programToAddImage.js">
+     <button onclick="myFunction()">Try it</button>
+</script> -->
 
+<script src="vendor/canvas-to-blob.min.js"></script>
+<script src="assets/js/resize.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 
