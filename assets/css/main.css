@@ -41,6 +41,13 @@ blockquote, q {
 	quotes: none;
 }
 
+h1 {
+	color:black;
+}
+h8 {
+	color:white;
+}
+
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
@@ -2580,7 +2587,7 @@ input, select, textarea {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
-				border: solid 10px #000000;
+				border: solid 10px white;
 			}
 
 				.tiles article > .image img {
@@ -3137,7 +3144,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 0.5em 0.5em 3em 0.5em ;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3322,6 +3329,7 @@ input, select, textarea {
 	box-sizing: border-box;
 	max-width: auto;
 	max-height: auto;
+	padding: 1em 1em 1em 1em;
 }
 
 
