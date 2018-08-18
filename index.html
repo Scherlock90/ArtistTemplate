@@ -266,29 +266,35 @@
 						<div class="a11">
 							<h11> <strong>Kontakt ze mną tradycyjny</strong></h11>
 						</div>
-							
-							<div class="adresDiv">
+							<form>
+										
 									<div class="adresDiv">
-											<h12>Telefon: <br>
-												<a><strong>664 - 357 - 343</strong></a></h12>
-												<br>
-												<p class="smallFontAdres">(Gdybyś postanowił/-a zapytać z ciekawości o moją twórczość)</p>
-									</div>
-									<div class="adresDiv, adresDivCenter">
-											<h12>Email: <br>
-												<a><strong>ewa-napora@o2.pl</strong></a></h12>
-												<br>
-												<p class="smallFontAdres">(Gdybyś postanowił/-a utrzymywać kontakt poprzez pocztę e-mail)</p>
-									</div>
-									<div class="adresDiv, adresDivRight">
-											<h12>Adres: <br>	
-												<a><strong>Kluczyce 21 A, 29-145 Secemin</strong></a>
-												<br>
-												<p class="smallFontAdres">(Gdybyś postanowił/-a przyjechać i zobaczyć moje prace osobiście)</p>
-											</h12>
-									</div>
-									
-							</div>			
+											<div class="adresDiv">
+													<h12>Telefon: <br>
+														<input type="button" name="textAdres" value="664 - 357 - 343" onClick="clic(this);">
+														<!-- <a id="telContact"><strong>664 - 357 - 343</strong></a> --></h12>
+														<br>
+														<p class="smallFontAdres">(Gdybyś postanowił/-a zapytać z ciekawości o moją twórczość)</p>
+											</div>
+											<div class="adresDiv, adresDivCenter">
+													<h12>Email: <br>
+														<input type="button" name="textAdres" value="ewa-napora@o2.pl" onClick="clic(this);">
+														<!-- <a id="emailContact"><strong>ewa-napora@o2.pl</strong></a></h12> -->
+														<br>
+														<p class="smallFontAdres">(Gdybyś postanowił/-a utrzymywać kontakt poprzez pocztę e-mail)</p>
+											</div>
+											<div class="adresDiv, adresDivRight">
+													<h12>Adres: <br>	
+														<input type="button" name="textAdres" value="Kluczyce 21 A, Secemin" onClick="clic(this);">
+														<!-- <a id="adresContact"><strong>Kluczyce 21 A, 29-145 Secemin</strong></a> -->
+														<br>
+														<p class="smallFontAdres">(Gdybyś postanowił/-a przyjechać i zobaczyć moje prace osobiście)</p>
+													</h12>
+											</div>
+											
+									</div>		
+							</form>
+								
 					</section>
 				</div>
 
@@ -340,6 +346,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/cliced.js"></script>
 	</body>
 </html>
