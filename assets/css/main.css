@@ -2494,8 +2494,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: blue !important;
+			box-shadow: inset 0 0 0 2px black;
 		}
 
 		input[type="submit"]:active,
@@ -3380,4 +3380,57 @@ input, select, textarea {
 h12 {
 	max-width: 10px;
 	
+}
+
+#aboutArtist{
+	/* min-height: 200px; */
+	max-height: 400px;
+	overflow: hidden;
+
+	-webkit-transition: max-height 0.7s;
+	-moz-transition: max-height 0.7s;
+	transition: max-height 0.7s;
+}
+
+	#aboutArtist.notOpen {
+		max-height: 400px;
+
+		-webkit-transition: max-height 0.7s;
+		-moz-transition: max-height 0.7s;
+		transition: max-height 0.7s;
+	}
+	#aboutArtist.open {
+		max-height: 600px;
+
+		-webkit-transition: max-height 0.7s;
+		-moz-transition: max-height 0.7s;
+		transition: max-height 0.7s;
+	}
+
+	#aboutArtist.closed {
+		min-height: 400px;
+		max-height: 400px;
+		overflow: hidden;
+
+		-webkit-transition: max-height 0.7s;
+		-moz-transition: max-height 0.7s;
+		transition: max-height 0.7s;
+	}
+#showMoreButton{
+	background: darkgray;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: solid;
+	max-width: 200px;
+	color: red;	
+	display: block;
+	margin:  auto;
+	padding: auto;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.information {
+	max-height: 200px;
+	overflow: hidden;
 }
