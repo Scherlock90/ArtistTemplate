@@ -18,15 +18,17 @@
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
 
-		<!-- script for adding foto? -->
-		<script type="text/javascript">
+		 <!-- script for adding foto? -->
+		<!--<script type="text/javascript">
 			function insert(){
 				var src = document.getElementById("gamediv");
 				var img = document.createElement('img');
 				img.src = 'img/eqp/' + this.apparel + '/' + this.facing + '_idle.png';
 				document.getElementById('gamediv').appendChild(img)
 			}
-		 </script>
+		 </script> -->
+
+
 	</head>
 	<body class="is-preload">
 		<div class="administrator">
@@ -83,8 +85,8 @@
 							</header>
 
 							<div id="aboutArtist">
-									<span>
-										<img src="images/informationImage.jpg">
+									<span class="imageFace">
+										<img  onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="images/informationImage.jpg">
 									</span>
 									<h8  class="information">
 											&nbsp&nbsp&nbsp&nbsp&nbsp <strong>Ewa Napora</strong> z domu <Strong>Borowska</Strong> pochodzi z województwa <a href="http://www.lubelskie.pl/"><strong>lubelskiego</strong></a>,
@@ -104,6 +106,8 @@
 							</div>	
 						</div>
 					</div>
+
+					
 
 					<div class="kafelki" style="background-image:url(images/bg.jpg); background-size: cover;">
 						<section class="tiles" >
@@ -263,12 +267,16 @@
 					document.body.appendChild(x);
 				}
 				</script> -->
-				<div id="adres" style="background-image:url(images/fulls/04.jpg); background-size: cover;">
+				<div id="adres"  style="background-image:url(images/fulls/04.jpg); background-size: cover;">
 					<section>
 						<div class="a11">
 							<h11> <strong>Kontakt ze mną tradycyjny</strong></h11>
 						</div>
 							<form>
+								
+									<!-- <button id="button">Test it</button>
+
+									<p id="test"></p> -->
 										
 									<div class="adresDiv">
 											<div class="adresDiv">
@@ -299,6 +307,7 @@
 								
 					</section>
 				</div>
+				
 
 
 				<!-- Footer -->
@@ -349,5 +358,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/cliced.js"></script>
+			<script src="assets/js/focus.js"></script>
 	</body>
 </html>

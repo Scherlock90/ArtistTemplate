@@ -3407,9 +3407,9 @@ h12 {
 		transition: max-height 0.7s;
 	}
 
-	#aboutArtist.closed {
-		min-height: 400px;
-		max-height: 400px;
+	#aboutArtist.biggerImageArtist {
+		min-height: 500px;
+		max-height: 500px;
 		overflow: hidden;
 
 		-webkit-transition: max-height 0.7s;
@@ -3434,3 +3434,13 @@ h12 {
 	max-height: 200px;
 	overflow: hidden;
 }
+
+.animate-right{
+	
+	position:relative;
+	animation:animateright 2.9s}
+	
+	@keyframes animateright{
+		from{right:-1000px;opacity:0} to{right:0;opacity:1}
+	}
+

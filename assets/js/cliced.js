@@ -37,18 +37,18 @@ var main = document.getElementById("main");
 // function to change Lenght text
 
 function changeLenghtText() {
-    // get the clock
+    // get the textAboutArtist
     var textAboutArtist = document.getElementById('aboutArtist');
 
-    // get the current value of the clock's display property
+    // get the current value of textAboutArtist display property
     var displaySetting = textAboutArtist.style.display;
 
-    // also get the clock button, so we can change what it says
+    // also get the showMoreButton, so we can change what it says
     var showMoreButton = document.getElementById('showMoreButton');
 
-    // now toggle the clock and the button text, depending on current state
+    // now toggle the showMoreButton and the button text, depending on current state
     if (displaySetting == 'block') {
-      // clock is visible. hide it
+      // text is visible. hide it
       
       textAboutArtist.style.display = '';
       aboutArtist.className = '';
@@ -56,13 +56,15 @@ function changeLenghtText() {
       showMoreButton.innerHTML = "Pokaż więcej";
     }
     else {
-      // clock is hidden. show it
+      // text is hidden. show it
       textAboutArtist.style.display = 'block';
       aboutArtist.className = 'open';
       // change button text
       showMoreButton.innerHTML = "Pokaż mniej";
     }
   }
+
+  
 
 
 
