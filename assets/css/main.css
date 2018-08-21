@@ -3415,6 +3415,74 @@ h12 {
 		-moz-transition: max-height 0.7s;
 		transition: max-height 0.7s;
 	}
+
+	body.is-touch #aboutArtist h8.information {
+		max-height: 15em;
+		opacity: 1;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#aboutArtist {
+			margin: -1.25em 0 0 -1.25em;
+		}
+
+			#aboutArtist h8.information  {
+				width: calc(33.3333333333% - 1.25em);
+				height: calc(33.3333333333% - 1.25em);
+				margin: 1.25em 0 0 1.25em;
+			}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#aboutArtist {
+			margin: -2.5em 0 0 -2.5em;
+		}
+
+			#aboutArtist h8.information  {
+				width: calc(50% - 2.5em);
+				height: calc(50% - 2.5em);
+				margin: 2.5em 0 0 2.5em;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#aboutArtist {
+			margin: -1.25em 0 0 -1.25em;
+		}
+
+			#aboutArtist h8.information {
+				width: calc(50% - 1.25em);
+				height: calc(50% - 1.25em);
+				margin: 1.25em 0 0 1.25em;
+			}
+
+			#aboutArtist h8.information:hover > .image {
+				-moz-transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				-ms-transform: scale(1.0);
+				transform: scale(1.0);
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#aboutArtist {
+			margin: 0;
+		}
+
+			#aboutArtist h8.information  {
+				width: 100%;
+				height: 100%;
+				margin: 1.25em 0 0 0;
+			}
+
+	}
 #showMoreButton{
 	background: darkgray;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -3468,7 +3536,27 @@ h12 {
 		padding: 5px 5px 5px 5px;
 		display: flex;
 		align-items: center;
-		justify-content: center; 
-		outline-color: white;
-		
+		justify-content: center; 		
 	}
+
+
+	.buttonOnTop{
+		margin-top: 10px;
+		border-top: 2em;
+		background-color: darkgrey;
+		display: block;
+		margin:  auto;
+		padding: auto;
+		text-align: center;
+		cursor: pointer;	
+	}
+	.toButtonOnTop{
+		display: block;
+		margin:  auto;
+		padding: auto;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap};
+	.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important};
