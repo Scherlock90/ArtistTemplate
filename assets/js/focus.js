@@ -39,15 +39,26 @@ function textFlightRight()
 //     }
 // }
 
+// function resizeDiv() {
+//     var x = document.getElementById("imageFace");
+//     var funBigImg = bigImg();
+//     if(funBigImg.){
+
+//         document.getElementsByClassName("biggerImageArtist");
+//     }else{
+
+//     }
+    
+// }
+
+
 function bigImg(x) 
 {
-    var biggerDiv = document.getElementById("aboutArtist");
 	x.style.height = "15%";
     x.style.width = "25%";
-     biggerDiv = x.style.document.getElementsByClassName("biggerImageArtist");//to nie dziala
-}							
+    x.style.document.getElementsById("showMoreButton")  
+}						
 function normalImg(x) 
 {
      x.style = document.getElementsByClassName("image");
 }
-							

@@ -1,10 +1,3 @@
-
-
-// alertContact.onclick = function()
-// {
-//     alert("you cliced me" + alertContact);
-// };
-
 // function to click input button and show value assigment
 function clic(element)
 {
@@ -63,18 +56,3 @@ function changeLenghtText() {
       showMoreButton.innerHTML = "Pokaż mniej";
     }
   }
-
-  
-
-
-
-// var alertContact = document.getElementById("telContact");
-// alertContact.onclick = function()
-// {
-//     var fontSize = document.getElementById("telContact") ;
-//     alert("" + alertContact + fontSize)
-
-// }
-
-
-
