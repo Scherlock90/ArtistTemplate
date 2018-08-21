@@ -3469,5 +3469,6 @@ h12 {
 		display: flex;
 		align-items: center;
 		justify-content: center; 
+		outline-color: white;
 		
 	}
