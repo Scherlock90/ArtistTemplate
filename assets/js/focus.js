@@ -56,7 +56,7 @@ function bigImg(x)
 {
 	x.style.height = "15%";
     x.style.width = "25%";
-    x.style.document.getElementsById("showMoreButton")  
+   
 }						
 function normalImg(x) 
 {
