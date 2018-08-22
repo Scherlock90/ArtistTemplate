@@ -3550,6 +3550,19 @@ h12 {
 		text-align: center;
 		cursor: pointer;	
 	}
+
+			.buttonOnTop {
+				transition: all 0.5s ease 0s;
+				-moz-transition: all 0.5s ease 0s;
+				-webkit-transition: all 0.5s ease 0s;
+				-o-transition: all 0.5s ease 0s;
+				display:none;
+				cursor: pointer;
+			}
+			.buttonOnTop:hover {
+				opacity: 1;
+			}
+
 	.toButtonOnTop{
 		display: block;
 		margin:  auto;
@@ -3557,6 +3570,9 @@ h12 {
 		text-align: center;
 		cursor: pointer;
 	}
+
+	
+	  
 
 	.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap};
 	.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important};

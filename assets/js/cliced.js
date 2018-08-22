@@ -57,19 +57,30 @@ function changeLenghtText() {
     }
   }
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
+  //old version to scroll to up
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+
+$(document).ready(function(){
+	$(".buttonOnTop").hide();
+	$(function toTop() {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.buttonOnTop').fadeIn();
+			} else {
+				$('.buttonOnTop').fadeOut();
+			}
+		});
+
+		$('.buttonOnTop').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});			
+	});
