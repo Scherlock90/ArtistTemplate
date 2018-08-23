@@ -2755,7 +2755,23 @@ input, select, textarea {
 			margin-top: 2em;
 		}
 
+		body.is-preload .inner header {
+			-moz-transform: scale(5.9);
+			-webkit-transform: scale(5.9);
+			-ms-transform: scale(5.9);
+			transform: scale(5.9);
+			opacity: 0;
+		}
+
 		body.is-preload .tiles article {
+			-moz-transform: scale(0.9);
+			-webkit-transform: scale(0.9);
+			-ms-transform: scale(0.9);
+			transform: scale(0.9);
+			opacity: 0;
+		}
+
+		body.is-preload #aboutArtist  {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
 			-ms-transform: scale(0.9);
@@ -3389,7 +3405,27 @@ h12 {
 	-webkit-transition: max-height 0.7s;
 	-moz-transition: max-height 0.7s;
 	transition: max-height 0.7s;
+	/* opacity: 0;
+
+	/* set tranistion up */
+
+	/* -webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+	transition: opacity 0.7s; */
+
+
 }
+	/* #aboutArtist.divAboutArtist{
+
+		opacity: 1;
+	
+		/* set tranistion up */
+
+	-webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+	transition: opacity 0.7s;
+
+	} */
 
 	#aboutArtist.notOpen {
 		max-height: 400px;
@@ -3571,7 +3607,28 @@ h12 {
 		cursor: pointer;
 	}
 
+	#headerTitle
+	{
+			opacity: 0;
+
+			/* set tranistion up */
 	
+			-webkit-transition: opacity 0.7s;
+			-moz-transition: opacity 0.7s;
+			transition: opacity 0.7s;
+	}
+
+		#headerTitle.h1HeaderTitle{
+	
+			opacity: 1;
+		
+			/* set tranistion up */
+	
+		-webkit-transition: opacity 0.7s;
+		-moz-transition: opacity 0.7s;
+		transition: opacity 0.7s;
+	
+		}
 	  
 
 	.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap};
