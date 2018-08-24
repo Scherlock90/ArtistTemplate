@@ -16,3 +16,23 @@ showElementsAboutArtist.onmouseover = function()
     clearTimeout(timeToShow);
            
 }
+
+
+////function another DivAboutArtist
+
+var divAboutArt = document.getElementById("aboutArtist");
+
+
+function showElementsDiVAboutArtist()
+{
+    divAboutArt.className = "divAboutArtist";
+   
+}
+
+
+var timeToShowS = setTimeout(showElementsDiVAboutArtist, 4000); //get 2 sec/2000milisec to start load element
+
+showElementsAboutArtist.onmouseover = function()
+{
+    clearTimeout(timeToShowS);    
+}

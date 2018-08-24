@@ -27,12 +27,14 @@ var main = document.getElementById("main");
 // };
 
 
+
+
 // function to change Lenght text
 
 function changeLenghtText() {
     // get the textAboutArtist
     var textAboutArtist = document.getElementById('aboutArtist');
-
+    
     // get the current value of textAboutArtist display property
     var displaySetting = textAboutArtist.style.display;
 
@@ -44,9 +46,10 @@ function changeLenghtText() {
       // text is visible. hide it
       
       textAboutArtist.style.display = '';
-      aboutArtist.className = '';
+      aboutArtist.className = 'divAboutArtist';
       // change button text
       showMoreButton.innerHTML = "Pokaż więcej";
+      
     }
     else {
       // text is hidden. show it
@@ -54,8 +57,9 @@ function changeLenghtText() {
       aboutArtist.className = 'open';
       // change button text
       showMoreButton.innerHTML = "Pokaż mniej";
+      
     }
-  }
+  };
 
   //old version to scroll to up
 

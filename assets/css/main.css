@@ -3405,27 +3405,48 @@ h12 {
 	-webkit-transition: max-height 0.7s;
 	-moz-transition: max-height 0.7s;
 	transition: max-height 0.7s;
-	/* opacity: 0;
+	opacity: 0;
 
-	/* set tranistion up */
-
-	/* -webkit-transition: opacity 0.7s;
-	-moz-transition: opacity 0.7s;
-	transition: opacity 0.7s; */
-
-
-}
-	/* #aboutArtist.divAboutArtist{
-
-		opacity: 1;
-	
-		/* set tranistion up */
+	 /* set tranistion up  */
 
 	-webkit-transition: opacity 0.7s;
 	-moz-transition: opacity 0.7s;
 	transition: opacity 0.7s;
+	display: block;	
+	/* in timer is important insert command display: block or none */
+}
 
-	} */
+#aboutArtist.normalImg{
+	/* min-height: 200px; */
+	max-height: 450px;
+	overflow: hidden;
+
+	-webkit-transition: max-height 0.7s;
+	-moz-transition: max-height 0.7s;
+	transition: max-height 0.7s;
+	opacity: 1;
+
+	 /* set tranistion up  */
+
+	-webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+	transition: opacity 0.7s;
+	display: block;	
+	/* in timer is important insert command display: block or none */
+}
+	 #aboutArtist.divAboutArtist{
+
+		opacity: 2;
+	
+		/* set tranistion up */
+
+	 -webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+	transition: opacity 0.7s;
+	
+	display: block;
+		/* i added block */
+	}   
 
 	#aboutArtist.notOpen {
 		max-height: 400px;
@@ -3436,20 +3457,25 @@ h12 {
 	}
 	#aboutArtist.open {
 		max-height: 600px;
+		opacity: 2;
 
 		-webkit-transition: max-height 0.7s;
 		-moz-transition: max-height 0.7s;
 		transition: max-height 0.7s;
+		display: block; 
+		/* i add block */
 	}
 
 	#aboutArtist.biggerImageArtist {
 		min-height: 500px;
 		max-height: 500px;
 		overflow: hidden;
+		opacity:1;
 
 		-webkit-transition: max-height 0.7s;
 		-moz-transition: max-height 0.7s;
 		transition: max-height 0.7s;
+		display: block;
 	}
 
 	body.is-touch #aboutArtist h8.information {
