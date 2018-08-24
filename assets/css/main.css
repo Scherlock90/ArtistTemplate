@@ -3397,6 +3397,7 @@ h12 {
 	
 }
 
+/* Id and class to div aboutArtist and function js */
 #aboutArtist{
 	/* min-height: 200px; */
 	max-height: 450px;
@@ -3415,34 +3416,15 @@ h12 {
 	display: block;	
 	/* in timer is important insert command display: block or none */
 }
-
-#aboutArtist.normalImg{
-	/* min-height: 200px; */
-	max-height: 450px;
-	overflow: hidden;
-
-	-webkit-transition: max-height 0.7s;
-	-moz-transition: max-height 0.7s;
-	transition: max-height 0.7s;
-	opacity: 1;
-
-	 /* set tranistion up  */
-
-	-webkit-transition: opacity 0.7s;
-	-moz-transition: opacity 0.7s;
-	transition: opacity 0.7s;
-	display: block;	
-	/* in timer is important insert command display: block or none */
-}
 	 #aboutArtist.divAboutArtist{
 
 		opacity: 2;
 	
 		/* set tranistion up */
 
-	 -webkit-transition: opacity 0.7s;
-	-moz-transition: opacity 0.7s;
-	transition: opacity 0.7s;
+		-webkit-transition: opacity 0.7s;
+		-moz-transition: opacity 0.7s;
+		transition: opacity 0.7s;
 	
 	display: block;
 		/* i added block */
@@ -3466,11 +3448,37 @@ h12 {
 		/* i add block */
 	}
 
+	/* class need to ImageResize */
+	#aboutArtist.normalImg{
+		/* min-height: 200px; */
+		max-height: 450px;
+		overflow: hidden;
+	
+		-webkit-transition: max-height 0.7s;
+		-moz-transition: max-height 0.7s;
+		transition: max-height 0.7s;
+		opacity: 1;
+	
+		 /* set tranistion up  */
+	
+		-webkit-transition: opacity 0.7s;
+		-moz-transition: opacity 0.7s;
+		transition: opacity 0.7s;
+		display: block;	
+		/* in timer is important insert command display: block or none */
+	}
+
 	#aboutArtist.biggerImageArtist {
 		min-height: 500px;
 		max-height: 500px;
 		overflow: hidden;
-		opacity:1;
+		opacity: 1;
+
+		/* set tranistion up  */
+	
+		-webkit-transition: opacity 0.7s;
+		-moz-transition: opacity 0.7s;
+		transition: opacity 0.7s;
 
 		-webkit-transition: max-height 0.7s;
 		-moz-transition: max-height 0.7s;
@@ -3478,6 +3486,7 @@ h12 {
 		display: block;
 	}
 
+	/* to evrything size mobile */
 	body.is-touch #aboutArtist h8.information {
 		max-height: 15em;
 		opacity: 1;
