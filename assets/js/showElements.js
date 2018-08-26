@@ -12,7 +12,7 @@ function showElementsAboutArtist()
 
 var timeToShow = setTimeout(showElementsAboutArtist, 2000); //get 2 sec/2000milisec to start load element
 
-showElementsAboutArtist.onmouseover = function()
+showElementsAboutArtist.onload = function()
 {
     clearTimeout(timeToShow);
            
@@ -32,7 +32,7 @@ function showElementsDiVAboutArtist()
 
 var timeToShowS = setTimeout(showElementsDiVAboutArtist, 4000); //get 2 sec/2000milisec to start load element
 
-showElementsAboutArtist.onmouseover = function()
+showElementsAboutArtist.onload = function()
 {
     clearTimeout(timeToShowS);    
 }

@@ -4,7 +4,6 @@ function clic(element)
   alert("<br><br>Możesz skorzystać z " + element.value);
 }
 
-// better form of new allert
 var ALERT_TITLE = "Środek kontaktu!";
 var ALERT_BUTTON_TEXT = "Ok";
 
