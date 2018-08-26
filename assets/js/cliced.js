@@ -67,7 +67,7 @@ $(document).ready(function(){
 		$('.buttonOnTop').click(function () {
 			$('body,html').animate({
 				scrollTop: 0
-			}, 800);
+			}, 3000);
 			return false;
 		});
 	});			

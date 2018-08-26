@@ -54,3 +54,29 @@ showElementsAboutArtist.onmouseover = function()
 //       }
 //     }
 //   }
+
+
+    document.getElementById("textOnRight").addEventListener("mouseover", mouseOver);
+    document.getElementById("textOnRight").addEventListener("mouseout", mouseOut);
+
+   function mouseOver()
+   {
+    document.getElementById("textOnRight");
+    let start = Date.now();
+
+    let timer = setInterval(function() 
+    {
+       var timePassed = setTimeout(textOnRight, 10000)
+        // let timePassed = Date.now() - start;
+
+      textOnRight.style.left = timePassed / 1 + 'px';
+
+      if (timePassed > 100) clearInterval(timer);
+    }, 20);
+  };  
+  
+
+  function mouseOut()
+  {
+      document.getElementById("textOnRight"); 
+  }

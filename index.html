@@ -8,6 +8,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/animation.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<!-- favicon -->
@@ -17,6 +18,7 @@
 		<link rel="manifest" href="favicon/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+		<script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 
 		 <!-- script for adding foto? -->
 		<!--<script type="text/javascript">
@@ -86,11 +88,11 @@
 							</header>
 
 							<div id="aboutArtist">
-									<span class="imageFace">
+									<span data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="imageFace">
 										<img class="imageFace" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="images/informationImage.jpg">
 									</span>
 									<br>
-									<h8 class="information">
+									<h8 data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="information">
 											&nbsp&nbsp&nbsp&nbsp&nbsp <strong>Ewa Napora</strong> z domu <Strong>Borowska</Strong> pochodzi z województwa <a href="http://www.lubelskie.pl/"><strong>lubelskiego</strong></a>,
 											a dokładniej z <a href="http://kontrast.janowlubelski.pl/"><strong>Janowa Lubelskiego</strong></a>, w którym się urodziła. 
 											Obecnie mieszka w Kluczycach, <a href="http://www.secemin.pl/"><strong>gmina Secemin</strong></a>. Zainteresowania i zdolności plastyczne przejawiała od najmłodszych lat.
@@ -98,12 +100,13 @@
 											i malarstwie, jest również znaną hafciarką i koronkarką. Uczestniczy w wielu lierackich konkursach i bierze czynny udział w wystawach.
 											Swoje prace przekazuje na cele charytatywne, jej obrazy znajdują się w wielu domach, w Polsce i za granicą.
 											<br>
-											<button onclick="changeLenghtText()" id="showMoreButton">Pokaż więcej</button>
+											<button data-scroll="toggle(.scaleDownIn, .scaleDownOut)" onclick="changeLenghtText()" id="showMoreButton">Pokaż więcej</button>
+											
 											
 											<br>
 											<br/>
 											<br>
-											<p> &nbsp&nbsp&nbsp&nbsp&nbsp Ma w swoim dorobku wiele prac, które dotyczącą różnych gałęzi artystycznych o czym przekonasz się przeglądając poniższe <strong>kafaelki artystyczne</strong>.</p>
+											<p  data-scroll="toggle(.fromRightIn, .fromRightOut)"> &nbsp&nbsp&nbsp&nbsp&nbsp Ma w swoim dorobku wiele prac, które dotyczącą różnych gałęzi artystycznych o czym przekonasz się przeglądając poniższe <strong>kafaelki artystyczne</strong>.</p>
 									</h8>
 									
 							</div>	
@@ -114,7 +117,7 @@
 
 					<div class="kafelki" style="background-image:url(images/bg.jpg); background-size: cover;">
 						<section class="tiles" >
-							<article class="style1">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style1">
 								<span class="image">
 									<img src="images/obraz1.jpg" alt=""  />
 								</span>
@@ -125,7 +128,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="style2">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style2">
 								<span class="image">
 									<img src="images/obrazWyszywany.jpg" alt="" />
 								</span>
@@ -136,7 +139,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="style3">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style3">
 								<span class="image">
 									<img src="images/tomikiPoezji.jpg" alt="" />
 								</span>
@@ -147,8 +150,8 @@
 									</div>
 								</a>
 							</article>
-							<article class="style4">
-								<span class="image">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style4">
+								<span  class="image">
 									<img src="images/decoupage.jpg" alt="" />
 								</span>
 								<a href="subPages/decoupage.html">
@@ -158,7 +161,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="style5">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style5">
 								<span class="image">
 									<img src="images/zdobieniaKoronkami.jpg" alt="" />
 								</span>
@@ -169,7 +172,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="style6">
+							<article data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="style6">
 								<span class="image">
 									<img src="images/zdobionePrzedmioty.jpg" alt="" />
 								</span>
@@ -273,52 +276,51 @@
 				<div id="adres"  style="background-image:url(images/fulls/04.jpg); background-size: cover;">
 					<section>
 						<div class="a11">
-							<h11> <strong>Kontakt ze mną tradycyjny</strong></h11>
+							<h11 data-scroll="toggle(.scaleUpIn, .scaleUpOut)" id="textOnRight"> <strong>Kontakt ze mną tradycyjny</strong></h11>
 						</div>
-							<form>
-								
-									<!-- <button id="button">Test it</button>
-
-									<p id="test"></p> -->
-										
+							<form>										
 									<div id="adres" class="adresDiv">
 										
 											<div class="adresDiv">
-													<h12>Telefon: <br>
+													<h12 data-scroll="toggle(.fromRightIn, .fromRightOut)">Telefon: <br>
 														<input type="button" name="textAdres" value="664 - 357 - 343" onClick="clic(this);">
 														<!-- <a id="telContact"><strong>664 - 357 - 343</strong></a> --></h12>
 														<br>
 														<p class="smallFontAdres">(Gdybyś postanowił/-a zapytać z ciekawości o moją twórczość)</p>
 											</div>
 											<div class="adresDiv, adresDivCenter">
-													<h12>Email: <br>
+													<h12 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">Email: <br>
 														<input type="button" name="textAdres" value="ewa-napora@o2.pl" onClick="clic(this);">
 														<!-- <a id="emailContact"><strong>ewa-napora@o2.pl</strong></a></h12> -->
 														<br>
 														<p class="smallFontAdres">(Gdybyś postanowił/-a utrzymywać kontakt poprzez pocztę e-mail)</p>
 											</div>
 											<div class="adresDiv, adresDivRight">
-													<h12>Adres: <br>	
+													<h12 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">Adres: <br>	
 														<input type="button" name="textAdres" value="Kluczyce 21 A, Secemin" onClick="clic(this);">
 														<!-- <a id="adresContact"><strong>Kluczyce 21 A, 29-145 Secemin</strong></a> -->
 														<br>
-														<p class="smallFontAdres">(Gdybyś postanowił/-a przyjechać i zobaczyć moje prace osobiście)</p>
+														<p data-scroll="toggle(.fromRightIn, .fromRightOut)" class="smallFontAdres">(Gdybyś postanowił/-a przyjechać i zobaczyć moje prace osobiście)</p>
 													</h12>
 											</div>
+
+											<!-- class="revealOnScroll" data-animation="fadeInUp" data-timout="300" -->
 											
 									</div>		
 							</form>
 								
 					</section>
 				</div>
+
+				
 				
 
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer  id="footer">
 						<div class="inner">
 							<section>
-								<h3>Lub poprzez formularz</h3>
+								<h3 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">Lub poprzez formularz</h3>
 								<form method="post" action="mailto:ewa-napora@o2.pl">
 									<div class="fields">
 										<div class="field half">
@@ -331,13 +333,13 @@
 											<textarea name="message" id="message" placeholder="Message">Treść wiadomości</textarea>
 										</div>
 									</div>
-									<ul class="actions">
+									<ul data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="actions">
 										<li><input type="submit" value="Wyślij" class="primary" /></li>
 									</ul>
 								</form>
 							</section>
 							<section>
-								<h3>Znajdź mnie na</h3>
+								<h3 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">Znajdź mnie na</h3>
 								<ul class="icons">
 									<!-- <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
 									<li><a href="https://www.facebook.com/profile.php?id=100009330553073" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
@@ -349,12 +351,12 @@
 									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li> -->
 								</ul>
 							</section>
-							<div class="toButtonOnTop">
+							<div data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="toButtonOnTop">
 								<br>
 								<!-- <button class="buttonOnTop" onclick="topFunction()" id="butOnTop" ><i class="fa fa-arrow-up w3-margin-right"></i>Idź do góry</button> -->
 								<button class="buttonOnTop" onclick="toTop()"><i class="fa fa-arrow-up w3-margin-right"></i>Idź do góry</button>
 							</div>							
-							<ul class="copyright" id="copyright2">
+							<ul data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="copyright" id="copyright2">
 								<li></li><li>&copy; Untitled. All rights reserved</li><li><strong>Desing: SeN</strong></a></li>
 							</ul>							
 						</div>
@@ -368,8 +370,59 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/cliced.js"></script>
 			<script src="assets/js/focus.js"></script>
-			<script src="assets/js/scrolltop.js"></script>
+			<!-- <script src="assets/js/scrolltop.js"></script> -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<script src="assets/js/showElements.js"></script>
+
+			<!-- <script>
+				$function()
+				{
+					var $window = $window, win_height_padded = $window.height() * 1.1, isTouch = Modernizr.touch;
+					if(isTouch){
+						$('.revealOnScroll').addClass('animated');
+					}
+				}
+					$window.on('scroll', revealOnScroll);
+					function revealOnScroll() 
+					{
+							var scrolled = $window.scrollTop(), win_height_padded = $window.height() * 1.1;
+							$(".revealOnScroll:not(.animated)").each(function () {
+							var $this = $(this),offsetTop = $this.offset().top;
+
+							if (scrolled + win_height_padded > offsetTop) {
+								if ($this.data('timeout')) {
+								window.setTimeout(function(){
+									$this.addClass('animated' + $this.data('animation'));
+								}, parseInt($this.data('timeout'),10));
+								} else {
+								$this.addClass('animated' + $this.data('animation'));
+								}
+							}
+					});
+					$('.revealOnScroll.animated').each(function (index){
+						var $this = $(this), offsetTop = $this.offsetTop().top;
+						if(scrolled + win_height_padded < offseTop){
+							$(this).removeClass('animated fadeInUp flixInX lightSpeedIn')
+						}
+					})
+				};
+			</script> -->
+			<script src="assets/js/ScrollTrigger.min.js"></script>
+				<script>
+				window.counter = function() {
+					// this refers to the html element with the data-scroll-showCallback tag
+					var span = this.querySelector('span');
+					var current = parseInt(span.textContent);
+
+					span.textContent = current + 1;
+				};
+
+				document.addEventListener('DOMContentLoaded', function(){
+				var trigger = new ScrollTrigger({
+					addHeight: true
+				});
+				});
+				</script>
+			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
 	</body>
 </html>

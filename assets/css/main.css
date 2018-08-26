@@ -3390,7 +3390,8 @@ input, select, textarea {
 }
 .smallFontAdres {
 	font-size: 80%;
-	font-style: italic;	
+	font-style: italic;
+	opacity: 1;
 }
 
 .kafelki {
@@ -3669,6 +3670,33 @@ h12 {
 		transition: opacity 0.7s;
 	
 		}
+
+		#textOnRight{
+			position: relative;
+			cursor: pointer;
+		  }
+
+		  .revealOnScroll { opacity: 0; }
+		  .block {
+			width: 31.33%;
+			margin: 1%;
+			float: left;
+		  }
+		  .marged {
+			margin-top: 100px;
+		  }
+		  .imageS {
+			width: 100%;
+			height: 200px;
+			position: relative;
+			display: block;
+			background-color: #48cfad;
+			opacity: 0.8;
+			-webkit-transition: all 400ms ease;
+			transition: all 400ms ease;
+			-webkit-background-size: cover;
+			background-size: cover;
+		  }
 	  
 
 	.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap};
