@@ -1,4 +1,5 @@
 //this function get the element aboutArist and set to time to show values
+document.getElementById("wrapper").addEventListener("load", setTimeout);
 
 var headerTitleH1 = document.getElementById("headerTitle");
 var displaySetting = headerTitleH1.style.display;
@@ -36,6 +37,7 @@ showElementsAboutArtist.onload = function()
 {
     clearTimeout(timeToShowS);    
 }
+
 
 ///// diV with contact
     document.getElementById("textOnRight").addEventListener("mouseover", mouseOver);
