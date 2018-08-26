@@ -11,7 +11,7 @@
             -webkit-animation-duration:2s;
             animation-duration:2s}
 
-/* animation */
+/* animation to show elements on pages to side by another side*/
 .fromTopIn
 {
 	transition: transform 1.0s ease, opacity 1.0s ease;
@@ -107,7 +107,7 @@
 	transform: scale(0.7,0.7);
 	opacity: 0.0;
 }
-/*  */
+/* animation who can used  */
 
             @-webkit-keyframes bounce {
                 0%,100%,20%,50%,80% {

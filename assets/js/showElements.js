@@ -37,25 +37,7 @@ showElementsAboutArtist.onmouseover = function()
     clearTimeout(timeToShowS);    
 }
 
-
-//function to show divAdres to other side
-
-// function myMove() {
-//     var elem = document.getElementById("adres");   
-//     var pos = elem;
-//     var id = setInterval(frame, 10);
-//     function frame() {
-//       if (pos == 350) {
-//         clearInterval(id);
-//       } else {
-//         pos++; 
-//         elem.style.top = pos + 'px'; 
-//         elem.style.left = pos + 'px'; 
-//       }
-//     }
-//   }
-
-
+///// diV with contact
     document.getElementById("textOnRight").addEventListener("mouseover", mouseOver);
     document.getElementById("textOnRight").addEventListener("mouseout", mouseOut);
 
@@ -66,14 +48,18 @@ showElementsAboutArtist.onmouseover = function()
 
     let timer = setInterval(function() 
     {
-       var timePassed = setTimeout(textOnRight, 10000)
+       var timePassed = setTimeout(textOnRight, 8000)
         // let timePassed = Date.now() - start;
 
       textOnRight.style.left = timePassed / 1 + 'px';
 
-      if (timePassed > 100) clearInterval(timer);
+      if (timePassed > 100) {
+      clearInterval(timer);  
+        }
     }, 20);
   };  
+
+  //cos zrobic, zeby wracal w druga strone!!!!!
   
 
   function mouseOut()
