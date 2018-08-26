@@ -11,24 +11,6 @@ var aboutArtist = document.getElementById("aboutArtist");
 var button = document.getElementById("show-more");
 var main = document.getElementById("main");
 
-// button.onclick = function(){
-
-//     var displaySetting = aboutArtist.style.display;
-//     if( displaySetting == 'block')
-//     {   
-//         aboutArtist.style.display = 'none';
-//         aboutArtist.className = "";
-//         aboutArtist.innerHTML = "Pokaż więcej"; 
-//     }else{
-//         aboutArtist.style.display = 'block';
-//         aboutArtist.className = "open";
-//         button.innerHTML = "Pokaż mniej";
-//     }
-// };
-
-
-
-
 // function to change Lenght text
 
 function changeLenghtText() {
@@ -68,6 +50,8 @@ function changeLenghtText() {
 //     document.body.scrollTop = 0;
 //     document.documentElement.scrollTop = 0;
 // }
+
+//function to scroll page to up in slow motion
 
 $(document).ready(function(){
 	$(".buttonOnTop").hide();

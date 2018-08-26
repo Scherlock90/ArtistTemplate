@@ -152,7 +152,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: black;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
@@ -3349,11 +3349,16 @@ input, select, textarea {
 		/* adres class */
 
 #adres {
-	background-color: silver;
+	/* background-color: silver;
 	box-sizing: border-box;
 	max-width: auto;
 	max-height: auto;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 1em 1em; */
+	display: block;
+	text-align: left;
+	padding: 15px;
+	color: darkslategrey;
+	font-style: unset;
 }
 
 

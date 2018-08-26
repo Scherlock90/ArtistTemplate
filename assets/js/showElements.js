@@ -6,6 +6,7 @@ var displaySetting = headerTitleH1.style.display;
 function showElementsAboutArtist()
 {
     headerTitleH1.className = "h1HeaderTitle";  
+    // headerTitleH1.style.setInterval
 }
 
 
@@ -26,7 +27,6 @@ var divAboutArt = document.getElementById("aboutArtist");
 function showElementsDiVAboutArtist()
 {
     divAboutArt.className = "divAboutArtist";
-   
 }
 
 
@@ -36,3 +36,21 @@ showElementsAboutArtist.onmouseover = function()
 {
     clearTimeout(timeToShowS);    
 }
+
+
+//function to show divAdres to other side
+
+// function myMove() {
+//     var elem = document.getElementById("adres");   
+//     var pos = elem;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//       if (pos == 350) {
+//         clearInterval(id);
+//       } else {
+//         pos++; 
+//         elem.style.top = pos + 'px'; 
+//         elem.style.left = pos + 'px'; 
+//       }
+//     }
+//   }
