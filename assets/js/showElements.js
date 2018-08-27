@@ -60,7 +60,7 @@ showElementsDiVAboutArtist.onload = function()
 }
 
 
-///// diV with contact
+///// diV with contact go to right
     document.getElementById("textOnRight").addEventListener("mouseover", mouseOver);
     document.getElementById("textOnRight").addEventListener("mouseout", mouseOut);
 
@@ -73,14 +73,22 @@ showElementsDiVAboutArtist.onload = function()
     {
        var timePassed = setTimeout(textOnRight, 8000)
         // let timePassed = Date.now() - start;
+        textOnRight.style.right = timePassed / 1 + 'px';
+      
 
-      textOnRight.style.left = timePassed / 1 + 'px';
-
-      if (timePassed > 100) {
-      clearInterval(timer);  
+      if (timePassed > 300) {
+          
+          clearInterval(timer); 
+        } else if (timePassed > 100) {
+            textOnRight.style.left = timePassed / 1 + 'px' ;
+            
+        }else {
+            console.log("cofnęło napis");
         }
     }, 20);
   };  
+
+
 
   //cos zrobic, zeby wracal w druga strone!!!!!
   
