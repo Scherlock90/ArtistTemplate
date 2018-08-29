@@ -76,14 +76,13 @@ showElementsDiVAboutArtist.onload = function()
         textOnRight.style.right = timePassed / 1 + 'px';
       
 
-      if (timePassed > 300) {
+      if (timePassed > 80) {
           
-          clearInterval(timer); 
-        } else if (timePassed > 100) {
+        clearInterval(timer); 
+        } else if (timePassed >=50) {
             textOnRight.style.left = timePassed / 1 + 'px' ;
-            
-        }else {
-            console.log("cofnęło napis");
+        } else {
+            console.log("cofnęło napis");  
         }
     }, 20);
   };  
