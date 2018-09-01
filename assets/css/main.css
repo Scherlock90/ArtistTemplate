@@ -3751,3 +3751,31 @@ h12 {
 
 	.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap};
 	.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important};
+
+	.textShowss {
+		
+		position: relative;
+		font-weight: 900;
+		font-size: 3.7em;
+		
+		
+	  }
+	  .textShowss .a11 {
+		position: relative;
+		display: inline-block;
+		padding-top: 2em;
+		padding-right: 0.05em;
+		padding-bottom: 0.1em;
+		overflow: hidden;
+		margin-right: -50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+	  }
+	  .textShowss .textAdres {
+		transform-origin: 0 100%;
+		display: inline-block;
+		line-height: 1em;
+		
+	  }

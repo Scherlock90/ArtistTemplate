@@ -277,15 +277,17 @@
 				</script> -->
 				<div id="adres"  style="background-image:url(images/fulls/04.jpg); background-size: cover;">
 					<section>
-						<div class="a11">
-							<h11 id="textOnRight"> <strong>Kontakt ze mną tradycyjny</strong></h11>
-							<!-- <h11 data-scroll="toggle(.scaleUpIn, .scaleUpOut)" id="textOnRight"> <strong>Kontakt ze mną tradycyjny</strong></h11> -->
+						<div class="textShowss">
+							<div class="a11">
+								<h11 class="textAdres"> <strong>Kontakt ze mną tradycyjny</strong></h11>
+								<!-- <h11 data-scroll="toggle(.scaleUpIn, .scaleUpOut)" id="textOnRight"> <strong>Kontakt ze mną tradycyjny</strong></h11> -->
+							</div>
 						</div>
 							<form>										
 									<div id="adres" class="adresDiv">
 										
 											<div class="adresDiv">
-													<h12 data-scroll="toggle(.fromRightIn, .fromRightOut)">Telefon: <br>
+													<h12 class="phone" data-scroll="toggle(.fromRightIn, .fromRightOut)">Telefon: <br>
 														<input type="button" name="textAdres" value="664 - 357 - 343" onClick="clic(this);">
 														<!-- <a id="telContact"><strong>664 - 357 - 343</strong></a> --></h12>
 														<br>
@@ -376,6 +378,7 @@
 			<!-- <script src="assets/js/scrolltop.js"></script> -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 			<script src="assets/js/showElements.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 			<!-- <script>
 				$function()
@@ -431,5 +434,31 @@
 				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 				crossorigin="anonymous"></script>
 			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
+			<script>
+				// Wrap every letter in a span
+$('.textShowss .textAdres').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='textAdres'>$&</span>"));
+  });
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.textShowss .textAdres',
+      translateY: ["1.1em", 0],
+      translateX: ["0.55em", 0],
+      translateZ: 0,
+      rotateZ: [180, 0],
+      duration: 750,
+      easing: "easeOutExpo",
+      delay: function(el, i) {
+        return 50 * i;
+      }
+    }).add({
+      targets: '.textShowss',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+			</script>
 	</body>
 </html>

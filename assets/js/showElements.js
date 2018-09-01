@@ -96,3 +96,5 @@ showElementsDiVAboutArtist.onload = function()
   {
       document.getElementById("textOnRight"); 
   }
+
+  
