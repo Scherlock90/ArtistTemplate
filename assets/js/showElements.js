@@ -96,5 +96,7 @@ showElementsDiVAboutArtist.onload = function()
   {
       document.getElementById("textOnRight"); 
   }
+// shows FotoArtist
+  
 
   

@@ -89,10 +89,21 @@
 							</header>
 
 							<div id="aboutArtist">
-									<span data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="imageFace">
-										<img class="imageFace"   src="images/informationImage.jpg">
-										<!-- <img class="imageFace" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="images/informationImage.jpg"> -->
-									</span>
+
+									<h1 class="ml8">
+											<span class="letters-container">
+											  <span class="letters letters-left imageFace"><img src="images/informationImage.jpg"></span>
+											  <!-- <span class="letters bang">!</span> -->
+											</span>
+											<span class="circle circle-white"></span>
+											<!-- <span class="circle circle-dark"></span> -->
+											<span class="circle circle-container"></span>
+										  </h1>
+									<!-- <span data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="imageFace">
+										<img src="images/informationImage.jpg">
+										
+									</span> -->
+									<!-- <img class="imageFace" onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="images/informationImage.jpg"> -->
 									<br>
 									<h8 data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="information">
 											&nbsp&nbsp&nbsp&nbsp&nbsp <strong>Ewa Napora</strong> z domu <Strong>Borowska</Strong> pochodzi z województwa <a href="http://www.lubelskie.pl/"><strong>lubelskiego</strong></a>,
@@ -447,7 +458,7 @@ $('.textShowss .textAdres').each(function(){
       translateX: ["0.55em", 0],
       translateZ: 0,
       rotateZ: [180, 0],
-      duration: 750,
+      duration: 900,
       easing: "easeOutExpo",
       delay: function(el, i) {
         return 50 * i;
@@ -459,6 +470,55 @@ $('.textShowss .textAdres').each(function(){
       easing: "easeOutExpo",
       delay: 1000
     });
+			</script>
+
+			<script>
+				anime.timeline({loop: true})
+					.add({
+						targets: '.ml8 .circle-white',
+						scale: [0, 3],
+						opacity: [1, 0],
+						easing: "easeInOutExpo",
+						rotateZ: 360,
+						duration: 1100
+					}).add({
+						targets: '.ml8 .circle-container',
+						scale: [0, 1],
+						duration: 1100,
+						easing: "easeInOutExpo",
+						offset: '-=1000'
+					}).add({
+						targets: '.ml8 .circle-dark',
+						scale: [0, 1],
+						duration: 1100,
+						easing: "easeOutExpo",
+						offset: '-=600'
+					}).add({
+						targets: '.ml8 .letters-left',
+						scale: [0, 1],
+						duration: 1200,
+						offset: '-=550'
+					}).add({
+						targets: '.ml8 .bang',
+						scale: [0, 1],
+						rotateZ: [45, 15],
+						duration: 1200,
+						offset: '-=1000'
+					}).add({
+						targets: '.ml8',
+						opacity: 0,
+						duration: 4000,
+						easing: "easeOutExpo",
+						delay: 1400
+					});
+
+					anime({
+					targets: '.ml8 .circle-dark-dashed',
+					rotateZ: 360,
+					duration: 8000,
+					easing: "linear",
+					loop: true
+					});
 			</script>
 	</body>
 </html>
