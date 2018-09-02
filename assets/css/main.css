@@ -3687,7 +3687,7 @@ h12 {
 	  }
 	  
 	  .ml8 .bang {
-		font-size: 1.4em;
+		font-size: 0.5em;
 		top: auto;
 		left: -0.06em;
 	  }
@@ -3704,7 +3704,7 @@ h12 {
 	  .ml8 .circle-white {
 		width: 3em;
 		height: 3em;
-		border: 2px dashed white;
+		border: 2px dashed blue;
 		border-radius: 2em;
 	  }
 	  
