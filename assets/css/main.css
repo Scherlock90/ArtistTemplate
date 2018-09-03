@@ -3652,10 +3652,15 @@ h12 {
 	}
 
 	.imageFace{	
-		padding: 5px 5px 5px 5px;
+		
 		display: flex;
 		align-items: center;
-		justify-content: center; 		
+		justify-content: center;
+		height: 200px;
+		width: 200px;
+		border-radius: 50%; 
+		border-color: white;
+		border: solid 10px;		
 	}
 	/* początek zmian odnosnie zdjęcia */
 
