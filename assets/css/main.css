@@ -3506,102 +3506,7 @@ h12 {
 	}
 
 	/* to evrything size mobile */
-	/* body.is-touch #aboutArtist h8.information {
-		max-height: 15em;
-		opacity: 1;
-	} */
-
-	@media screen and (max-width: 1280px) {
-
-		#aboutArtist {
-			margin: -1.25em 0 0 -1.25em;
-			width: 100%;
-		}
-
-			#aboutArtist h8.information  {
-				width: calc(33.3333333333% - 1.25em);
-				height: calc(33.3333333333% - 1.25em);
-				margin: 1.25em 0 0 1.25em;
-			}
-
-	}
-
-	@media screen and (max-width: 980px) {
-
-		#aboutArtist {
-			margin: -2.5em 0 0 -2.5em;
-			width: 100%;
-		}
-
-			#aboutArtist h8.information  {
-				width: calc(50% - 2.5em);
-				height: calc(50% - 2.5em);
-				margin: 2.5em 0 0 2.5em;
-			}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		#aboutArtist {
-			margin: -1.25em 0 0 -1.25em;
-			width: 100%;
-		}
-
-			#aboutArtist h8.information {
-				width: calc(50% - 1.25em);
-				height: calc(50% - 1.25em);
-				margin: 1.25em 0 0 1.25em;
-			}
-
-			#aboutArtist h8.information:hover > .image {
-				-moz-transform: scale(1.0);
-				-webkit-transform: scale(1.0);
-				-ms-transform: scale(1.0);
-				transform: scale(1.0);
-			}
-
-	}
-
-	@media screen and (max-width: 480px) {
-
-		#aboutArtist {
-			margin: 0;
-			width: 100%;
-			
-		}
-
-			#aboutArtist h8.information  {
-				width: 100%;
-				
-				margin: 1.25em 0 0 0;
-			}
-			#aboutArtist h8.information #showMoreButton {
-				width: 100%;
-			}
-
-	}
-
-	@media screen and (max-width: 320px) {
-		#aboutArtist {
-			margin: 0;
-			width: 100%;
-			
-		}
-
-		
-			#aboutArtist h8.information  {
-				width: 100%;
-				
-				margin: 1.25em 0 0 0;
-			}
-			#aboutArtist h8.information #showMoreButton {
-				width: 100%;
-				
-				
-			}
-
-	}
+	
 #showMoreButton{
 	background: darkgray;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -3667,19 +3572,21 @@ h12 {
 	h1.ml8 {
 		font-weight: 900;
 		font-size: 4.5em;
-		color: #fff;
+		color: goldenrod;
 		width: 1em;
 		height: 1em;
+		padding-bottom: 100px;
 	  }
 	  
 	  .ml8 .letters-container {
 		position: absolute;
 		left: 0;
 		right: 0;
-		margin: auto;
-		top: 0;
+		/* margin: auto; */
+		top: 140px;
 		bottom: 0;
 		height: 1em;
+		
 	  }
 	  
 	  .ml8 .letters {
@@ -3709,7 +3616,7 @@ h12 {
 	  .ml8 .circle-white {
 		width: 3em;
 		height: 3em;
-		border: 2px dashed blue;
+		border: 2px dashed gold;
 		border-radius: 2em;
 	  }
 	  
@@ -3781,7 +3688,8 @@ h12 {
 
 	#headerTitle
 	{
-			opacity: 0;
+		opacity: 0;
+		
 
 			/* set tranistion up */
 	
@@ -3793,6 +3701,8 @@ h12 {
 		#headerTitle.h1HeaderTitle{
 	
 			opacity: 1;
+			color: darkblue;
+			font-family: "Sacramento", Arial, serif; 
 		
 			/* set tranistion up */
 	
