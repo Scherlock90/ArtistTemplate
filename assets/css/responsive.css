@@ -1,0 +1,167 @@
+
+    #wrapper > * > .inner {
+        width: 100%;
+        max-width: 68em;
+        margin: 0 auto;
+        padding: 0 2.5em;
+    }    
+    @media screen and (max-width: 750px){
+        #wrapper > * > .inner {
+            
+           width: auto;
+           float:none;
+           margin-right: 0;
+            height: 100%;
+            text-align: justify;
+        }
+    #aboutArtist.divAboutArtist {
+       max-height: 500px;
+        display: block;
+        
+        text-align: justify;
+        
+       
+    }
+   #aboutArtist.notOpen {
+        max-height: 400px;
+
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+    }
+    #aboutArtist.open {
+        max-height: 100%;
+        opacity: 2;
+        text-align: justify;
+
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+        display: block;  
+        /* i add block */
+    }
+    .information{
+        height: 100%;
+    }
+
+    }
+       
+        @media screen and (max-width: 600px){
+            #wrapper > * > .inner {
+                
+               width: auto;
+               float:none;
+               margin-right: 0;
+                height: 100%;
+            }
+        #aboutArtist.divAboutArtist {
+           max-height: 580px;
+            display: block;
+            
+            text-align: justify;
+            
+           
+        }
+       #aboutArtist.notOpen {
+            max-height: 400px;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+        }
+        #aboutArtist.open {
+            max-height: 100%;
+            opacity: 2;
+            text-align: justify;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+            display: block;  
+            /* i add block */
+        }
+        .information{
+            height: 100%;
+        }
+
+        }
+        @media screen and (max-width: 440px){
+            #wrapper > * > .inner {
+                
+               width: auto;
+               float:none;
+               margin-right: 0;
+                height: 100%;
+            }
+        #aboutArtist.divAboutArtist {
+           max-height: 660px;
+            display: block;
+            
+            text-align: justify;
+            
+           
+        }
+       #aboutArtist.notOpen {
+            max-height: 400px;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+        }
+        #aboutArtist.open {
+            max-height: 100%;
+            opacity: 2;
+            text-align: justify;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+            display: block;  
+            /* i add block */
+        }
+        .information{
+            height: 100%;
+        }
+
+        }
+
+        @media screen and (max-width: 370px) {
+    
+            #wrapper > * > .inner {
+                padding: 0 1.25em;
+               
+                height: 100%;
+            }
+        #aboutArtist.divAboutArtist {
+           max-height: 600px;
+            display: block;
+            
+            text-align: justify;
+            
+           
+        }
+       #aboutArtist.notOpen {
+            max-height: 400px;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+        }
+        #aboutArtist.open {
+            max-height: 100%;
+            opacity: 2;
+            text-align: justify;
+    
+            -webkit-transition: max-height 0.7s;
+            -moz-transition: max-height 0.7s;
+            transition: max-height 0.7s;
+            display: block;  
+            /* i add block */
+        }
+        .information{
+            height: 80%;
+            font-size:80%;
+           
+        }
+    
+        }
