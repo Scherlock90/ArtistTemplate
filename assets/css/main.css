@@ -3351,6 +3351,7 @@ input, select, textarea {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
+				
 			}
 
 		}
@@ -3422,6 +3423,7 @@ h12 {
 	-moz-transition: max-height 0.7s;
 	transition: max-height 0.7s;
 	opacity: 0;
+	text-align: justify;
 
 	 /* set tranistion up  */
 
@@ -3440,6 +3442,7 @@ h12 {
 		-webkit-transition: opacity 0.7s;
 		-moz-transition: opacity 0.7s;
 		transition: opacity 0.7s;
+		text-align: justify;
 	
 	display: block;
 		/* i added block */
@@ -3451,6 +3454,7 @@ h12 {
 		-webkit-transition: max-height 0.7s;
 		-moz-transition: max-height 0.7s;
 		transition: max-height 0.7s;
+		text-align: justify;
 	}
 	#aboutArtist.open {
 		max-height: 600px;
@@ -3460,6 +3464,7 @@ h12 {
 		-moz-transition: max-height 0.7s;
 		transition: max-height 0.7s;
 		display: block; 
+		text-align: justify;
 		/* i add block */
 	}
 
@@ -3525,6 +3530,7 @@ h12 {
 .information {
 	max-height: 200px;
 	overflow: hidden;
+	text-align: justify;
 }
 
 .animate-right{
@@ -3573,19 +3579,19 @@ h12 {
 		font-weight: 900;
 		font-size: 4.5em;
 		color: goldenrod;
-		width: 1em;
+		width: 50%;
 		height: 1em;
 		padding-bottom: 100px;
 	  }
 	  
 	  .ml8 .letters-container {
 		position: absolute;
-		left: 0;
-		right: 0;
-		/* margin: auto; */
-		top: 140px;
+		/* left: 0;
+		right: 0; */
+		margin: auto;
+		/* top: 140px;
 		bottom: 0;
-		height: 1em;
+		height: 1em; */
 		
 	  }
 	  
@@ -3594,8 +3600,8 @@ h12 {
 		z-index: 2;
 		display: inline-block;
 		line-height: 0.7em;
-		right: -0.12em;
-		top: -0.2em;
+		/* right: -0.12em;
+		top: -0.2em; */
 	  }
 	  
 	  .ml8 .bang {
@@ -3606,11 +3612,11 @@ h12 {
 	  
 	  .ml8 .circle {
 		position: absolute;
-		left: 0;
-		right: 0;
+		/* left: 0;
+		right: 0; */
 		margin: auto;
-		top: 0;
-		bottom: 0;
+		/* top: 0;
+		bottom: 0; */
 	  }
 	  
 	  .ml8 .circle-white {

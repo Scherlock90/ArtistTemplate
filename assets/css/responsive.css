@@ -46,8 +46,29 @@
     .a11{
         font-size: 35px;
     }
-
+    .imageFace{	
+		
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 95%;
+        width: 95%;
+        border-radius: 80%; 
+        border-color: white;
+        border: solid 10px;		
     }
+    .ml8 .letters-container {
+        position: absolute;
+        /* left: 0; */
+        /* right: 0; */
+        margin: auto;
+        /* top: 140px;
+        bottom: 0;
+        height: 1em; */
+        
+      }
+
+}
        
         @media screen and (max-width: 600px){
             #wrapper > * > .inner {
@@ -89,8 +110,29 @@
         .a11{
             font-size: 30px;
         }
-
+        .imageFace{	
+		
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95%;
+            width: 95%;
+            border-radius: 80%; 
+            border-color: white;
+            border: solid 10px;		
         }
+        .ml8 .letters-container {
+            position: absolute;
+            /* left: 0; */
+            /* right: 0; */
+            margin: auto;
+            /* top: 140px;
+            bottom: 0;
+            height: 1em; */
+            
+          }
+
+    }
         @media screen and (max-width: 440px){
             #wrapper > * > .inner {
                 
@@ -131,8 +173,29 @@
         .a11{
             font-size: 25px;
         }
-
+        .imageFace{	
+		
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 85%;
+            width: 85%;
+            border-radius: 80%; 
+            border-color: white;
+            border: solid 10px;		
         }
+        .ml8 .letters-container {
+            position: absolute;
+            /* left: 0; */
+            /* right: 0; */
+            margin: auto;
+            /* top: 140px;
+            bottom: 0;
+            height: 1em; */
+            
+          }
+
+    }
 
         @media screen and (max-width: 370px) {
     
@@ -143,11 +206,8 @@
             }
         #aboutArtist.divAboutArtist {
            max-height: 600px;
-            display: block;
-            
+            display: block; 
             text-align: justify;
-            
-           
         }
        #aboutArtist.notOpen {
             max-height: 400px;
@@ -175,5 +235,25 @@
         .a11{
             font-size: 20px;
         }
-    
+        .imageFace{	
+		
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+            width: 75%;
+            border-radius: 80%; 
+            border-color: white;
+            border: solid 10px;		
         }
+        .ml8 .letters-container {
+            position: absolute;
+            /* left: 0; */
+            /* right: 0; */
+            margin: auto;
+            /* top: 140px;
+            bottom: 0;
+            height: 1em; */
+            
+          }
+ }
