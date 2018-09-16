@@ -3619,12 +3619,12 @@ h12 {
 		bottom: 0; */
 	  }
 	  
-	  .ml8 .circle-white {
-		width: 3em;
-		height: 3em;
-		border: 2px dashed gold;
-		border-radius: 2em;
-	  }
+		.ml8 .circle-white {
+			width: 3em;
+			height: 3em;
+			border: 2px dashed gold;
+			border-radius: 2em;
+		}
 	  
 	  .ml8 .circle-dark {
 		width: 4em;
