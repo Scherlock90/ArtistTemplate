@@ -1844,7 +1844,7 @@ input, select, textarea {
 			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background-color: transparent;
+			background-color: mediumblue;
 			border: solid 1px #c9c9c9;
 			border-radius: 4px;
 			width: 2.65em;
@@ -1852,7 +1852,7 @@ input, select, textarea {
 			display: inline-block;
 			text-align: center;
 			line-height: 2.65em;
-			color: inherit;
+			color: white;
 		}
 
 			.icon.style2:before {
@@ -2460,8 +2460,8 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		background-color: transparent;
-		border-radius: 4px;
+		/* background-color: transparent; */
+		/* border-radius: 4px; */
 		border: 0;
 		box-shadow: inset 0 0 0 2px #585858;
 		color: #585858 !important;
@@ -2479,6 +2479,7 @@ input, select, textarea {
 		text-overflow: ellipsis;
 		text-transform: uppercase;
 		white-space: nowrap;
+		
 	}
 
 		input[type="submit"].icon:before,
@@ -3513,7 +3514,7 @@ h12 {
 	/* to evrything size mobile */
 	
 #showMoreButton{
-	background: darkgray;
+	background: antiquewhite;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: solid;
 	font-size: 12px;
@@ -3525,6 +3526,7 @@ h12 {
 	text-transform: uppercase;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 100%;
 	
 }
 .information {
@@ -3659,17 +3661,30 @@ h12 {
 		
 	}
 		
-
+	.contactArtist{
+		border-radius: 30%;
+		background-color: greenyellow;
+	}
+	.wyslijWiadomosc{
+		border-radius: 20%;
+		background-color:cyan;
+		border-top-left-radius: 100%;
+		border-top-right-radius: 100%;
+	}
 
 	.buttonOnTop{
 		margin-top: 10px;
 		border-top: 2em;
-		background-color: darkgrey;
+		background-color: #ffff00;
 		display: block;
 		margin:  auto;
 		padding: auto;
 		text-align: center;
-		cursor: pointer;	
+		cursor: pointer;
+		border-top-left-radius: 0%;
+		border-top-right-radius: 0%;
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;	
 	}
 
 			.buttonOnTop {
@@ -3764,5 +3779,6 @@ h12 {
 		transform-origin: 0 100%;
 		display: inline-block;
 		line-height: 1em;
+		color:darkred;
 		
 	  }
