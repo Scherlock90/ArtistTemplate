@@ -2605,7 +2605,7 @@ input, select, textarea {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
-				border: solid 10px white;
+				border: solid 10px darkred;
 			}
 
 				.tiles article > .image img {
