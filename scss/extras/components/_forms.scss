@@ -1,0 +1,98 @@
+.btn {
+	box-shadow: none!important;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .1em;
+	transition: .3s all ease;
+	&:active, &:focus {
+		
+	}
+	&.btn-primary {
+		&:hover, &:active, &:focus {
+			border-color: lighten($primary, 10%);
+			background-color: lighten($primary, 10%);
+		}
+	}
+	&.btn-black {
+		background: $black;
+		color: $white;
+		border: 2px solid transparent;
+		&:hover {
+			color: $black;
+			background: transparent;
+			border: 2px solid $black;
+		}
+
+		&.btn-outline-black {
+			color: $black;
+			background: transparent;
+			border: 2px solid $black;
+			
+			&:hover {
+				background: $black;
+				color: $white;
+				border: 2px solid transparent;	
+			}
+		}
+	}
+
+	&.btn-white {
+		background: $white;
+		color: $black;
+		border: 2px solid transparent;
+		&:hover {
+			color: $white;
+			background: transparent;
+			border: 2px solid $white;
+		}
+
+		&.btn-outline-white {
+			color: $white;
+			background: transparent;
+			border: 2px solid $white;
+			
+			&:hover {
+				background: $white;
+				color: $black;
+				border: 2px solid transparent;	
+			}
+		}
+	}
+}
+
+.form-control {
+	border-radius: 0;
+	height: 50px;
+	box-shadow: none!important;
+	border: 1px solid lighten($black, 80%);
+	&:active, &:focus {
+		border-color: $black;
+	}
+	&.border-bottom {
+		border: none!important;
+		border-bottom: 1px solid #ccc!important;
+		appearance: none;
+		height: 50px;
+		padding: 0;
+	}
+
+}
+.input-with-icon-wrap {
+	position: relative;
+	select {
+		height: 50px!important;
+	}
+	.icon {
+		position: absolute;
+		font-size: 20px;
+		color: #ccc;
+		top: 50%;
+		right: 0px;
+		transform: translateY(-50%);
+	}
+}
+textarea.form-control,
+textarea.form-control.border-bottom {
+	height: inherit;
+}

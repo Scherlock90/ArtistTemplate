@@ -1,0 +1,142 @@
+html {
+	overflow-x: hidden;
+}
+body {
+	line-height: 2;
+	font-size: 15px;
+	color: lighten($black, 60%);
+	background: $white;
+}
+
+::-moz-selection { background: $black; color: $white; }
+::selection { background: $black; color: $white; }
+
+a {
+	transition: .3s all ease;
+	color: $black;
+	&:hover {
+		color: $black;
+		text-decoration: none;
+	}
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $black;
+	line-height: 1.5;
+}
+
+.templateux-section, .templateux-footer {
+	padding: 7em 0;
+	clear: both;
+}
+
+.lead {
+	font-size: 18px;
+}
+
+.container-fluid {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include media-breakpoint-up(md) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.templateux-container-fullwidth {
+	@extend .container-fluid;
+	padding-left: 15px;
+	padding-right: 15px;
+	@include media-breakpoint-up(md) {
+		padding-left: 0;
+		padding-right: 0;	
+	}
+
+	.templateux-row-overlay {
+
+		position: relative;
+		left: auto;
+		transform: none;
+		margin-left: -30px!important;
+		margin-right: -30px!important;
+		@include media-breakpoint-up(sm) {
+    	margin-left: auto!important;
+			margin-right: auto!important;
+    }
+    @include media-breakpoint-up(lg) {
+    	position: absolute;
+	    top: 0px;
+	    left: 50%;
+	    transform: translateX(-50%);
+    }
+    &.container {
+    	@include media-breakpoint-down(sm) {
+				width: auto!important;
+			}
+		}
+		
+	}
+}
+
+.testimonial-wrap {
+	.quote {
+		line-height: 1;
+		position: relative;
+		font-size: 100px;
+		color: $black;
+		text-align: center;
+	}
+}
+.templateux-counter {
+	.templateux-number {
+		display: block;
+		font-size: 50px;
+		color: $black;
+	}
+	.templateux-label {
+		text-transform: uppercase;
+		color: $black;
+		opacity: .5;
+	}
+}
+
+.overlay-row {
+	position: absolute;
+	top: 0;
+}
+
+/* isotope */
+/* ---- grid ---- */
+
+.grid {
+  float: left;
+  width: 100%;
+  .grid-item {
+  	width: 300px;
+  	margin-bottom: 10px;
+  	margin-left: 10px;
+		transition: .0s all ease;
+		img {
+			max-width: 100%;
+		}
+  }
+  &:after {
+  	content: '';
+		display: block;
+		clear: both;
+  }
+}
+
+
+
+
+.text-muted-alpha {
+	color: $white;
+	opacity: .3;
+}
+
+.link-primary {
+	color: $primary;
+	&:hover {
+		color: $primary;
+	}
+}

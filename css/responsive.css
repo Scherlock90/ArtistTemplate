@@ -1,0 +1,100 @@
+@media screen and (max-width: 1600px){
+    .bg-light{
+        background-color:#f8f9fa!important;
+        height: 900px;
+    }
+    a.bg-light:focus,
+    a.bg-light:hover,
+    button.bg-light:focus,
+    button.bg-light:hover{
+        background-color:#dae0e5!important}
+    .testimonial-wrap .quote{
+        line-height:1;
+        position:relative;
+        font-size: 75px;
+        color:#000;
+        text-align:center;
+        margin-bottom: 10px}
+    .block-testomonial .author .position{
+        font-size:30px;
+        color: #000}
+}
+@media screen and (max-width: 899px){
+    .bg-light{
+        background-color:#f8f9fa!important;
+        height: 900px;
+    }
+    a.bg-light:focus,
+    a.bg-light:hover,
+    button.bg-light:focus,
+    button.bg-light:hover{
+        background-color:#dae0e5!important}
+    .testimonial-wrap .quote{
+        line-height:1;
+        position:relative;
+        font-size: 60px;
+        color:#000;
+        text-align:center}
+        
+}
+@media screen and (max-width: 800px){
+    .bg-light{
+        background-color:#f8f9fa!important;
+        height: 800px;
+    }
+    a.bg-light:focus,
+    a.bg-light:hover,
+    button.bg-light:focus,
+    button.bg-light:hover{
+        background-color:#dae0e5!important}
+
+    .testimonial-wrap .quote{
+        line-height:1;
+        position:relative;
+        font-size: 55px;
+        color:#000;
+        text-align:center}
+    .block-testomonial .author .position{
+        font-size:25px;
+        color: #000}
+}
+
+@media screen and (max-width: 599px){
+    .bg-light{
+        background-color:#f8f9fa!important;
+        height: 700px;
+    }
+    a.bg-light:focus,
+    a.bg-light:hover,
+    button.bg-light:focus,
+    button.bg-light:hover{
+        background-color:#dae0e5!important}
+
+    .testimonial-wrap .quote{
+        line-height:1;
+        position:relative;
+        font-size:50px;
+        color:#000;
+        text-align:center}
+}
+
+@media screen and (max-width: 370px){
+    .bg-light{
+        background-color:#f8f9fa!important;
+        height: 700px;
+    }
+    a.bg-light:focus,
+    a.bg-light:hover,
+    button.bg-light:focus,
+    button.bg-light:hover{
+        background-color:#dae0e5!important
+    }
+
+    .testimonial-wrap .quote{
+        line-height:1;
+        position:relative;
+        font-size:40px;
+        color:#000;
+        text-align:center}
+}
+
