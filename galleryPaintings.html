@@ -218,11 +218,16 @@
         </div>  -->
 
         <div class="row pt-5 text-left">
-          <div class="col-md-12 text-center"><p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Design SeN <script>document.write(new Date().getFullYear());</script></a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p></div>
+          <div class="col-md-12 text-center">
+              <div class="col-md-12 text-center">
+                  <div data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="toButtonOnTop">
+                        <button class="buttonOnTop btn  btn-outline-gold py-2 px-4" onclick="toTop()"><img src="images/arrowUp.png" width="30px" height= "30px"><br></button>
+                    </div>
+                    <br>	
+                <p class="design">         
+                <a>Design <strong>SeN</strong> <script>document.write(new Date().getFullYear());</script> </a>
+              </p>
+            </div>
         </div> <!-- .row -->
 
       </div>
@@ -231,6 +236,28 @@
 
   </div> <!-- .js-animsition -->
 
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script>
+  window.counter = function() {
+    // this refers to the html element with the data-scroll-showCallback tag
+    var span = this.querySelector('span');
+    var current = parseInt(span.textContent);
+
+    span.textContent = current + 1;
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+    addHeight: true
+  });
+  });
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="js/cliced.js"></script>
+<script src="js/ScrollTrigger.js"></script>
   
   <script src="js/scripts-all.js"></script>
   <script src="js/main.js"></script>
