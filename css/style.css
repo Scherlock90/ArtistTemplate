@@ -239,7 +239,7 @@ a:hover{color:#000;text-decoration:none}
 .btn.btn-black:hover{color:#000;background:transparent;border:2px solid #000}
 
 .btn.btn-black.btn-outline-gold{color:#000;background:transparent;border:2px solid #000}
-.btn.btn-black.btn-outline-gold:hover{background:yellow;color:red;border:2px solid transparent}
+.btn.btn-black.btn-outline-gold:hover{color:red;border:2px solid transparent}
 
 .btn.btn-black.btn-outline-black{color:#000;background:transparent;border:2px solid #000}.btn.btn-black.btn-outline-black:hover{background:#000;color:#fff;border:2px solid transparent}
 .btn.btn-white{background:#fff;color:#000;border:2px solid transparent}
