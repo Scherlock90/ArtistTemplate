@@ -18,7 +18,14 @@
     .block-testomonial .author .position{
         font-size:30px;
         color: #000}
+    .display-4{
+        font-size:2rem;
+        font-weight:300;
+        line-height:1.2}
 }
+
+
+
 @media screen and (max-width: 899px){
     .bg-light{
         background-color:#f8f9fa!important;
@@ -76,6 +83,7 @@
         font-size:50px;
         color:#000;
         text-align:center}
+
 }
 
 @media screen and (max-width: 370px){
