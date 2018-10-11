@@ -11,6 +11,27 @@
             -webkit-animation-duration:2s;
             animation-duration:2s}
 
+
+
+.malowanie{
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  /* animation-name: painting;
+  animation-duration: 2s; */
+}
+.malowanie:active {
+ animation-name: painting;
+ animation-duration: 3s;
+ color:red;
+}
+
+@keyframes painting {
+  from {transform: translateX(0) translateY(0) translateY(30px)}
+  to{transform: translateX(300px) translateY(40px) translateZ(70px) translateY(-60px) }
+}
+
 /* animation to show elements on pages to side by another side*/
 .fromTopIn
 {
@@ -32,7 +53,7 @@
 {
 	transition: transform 1.0s ease, opacity 1.0s ease;
 	
-	transform: translate(0,0);
+	/* transform: translate(0,0); */
 	opacity: 1.0;
 }
 
