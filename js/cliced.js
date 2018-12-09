@@ -89,14 +89,6 @@ function changeLenghtText() {
     }
   };
 
-  //old version to scroll to up
-
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//     document.body.scrollTop = 0;
-//     document.documentElement.scrollTop = 0;
-// }
-
 //function to scroll page to up in slow motion
 
 $(document).ready(function(){

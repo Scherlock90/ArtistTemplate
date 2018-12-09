@@ -19,23 +19,13 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/dod.css">
     <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <!-- React freamowork library -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
   </head>
   <body>
   <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
-    
-    <!-- <nav class="templateux-menu">
-      <div class="templateux-menu-inner">
-        <ul>
-          <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="menu.html" class="animsition-link">Menu</a></li>
-          <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
-          <li><a href="contact.html" class="animsition-link">Contact</a></li>
-          <li class="cta"><a href="reservation.html" class="animsition-link py-2 px-4">Reserve Now</a></li>
-        </ul>
-      </div>
-    </nav> -->
-
     <header class="templateux-header">
       <div class="container-fluid">
         <div class="row">
@@ -44,10 +34,7 @@
           </div>
           <div class="col-6 text-right">
             <button class="d-block hamburger hamburger--spin templateux-toggle templateux-toggle-light ml-auto templateux-toggle-menu" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-                  <!-- <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span> -->
-                </button> 
+            </button> 
           </div>
         </div>
       </div>
@@ -167,7 +154,6 @@
                         <p>&ldquo;Wszystko jest możliwe. Niemożliwe wymaga po prostu więcej czasu.&rdquo; - Dan Brown</p>
                         <div class="author">
                           <img src="images/email.png" alt="Free template by TemplateUX">
-                          <!-- <h3>E-mail</h3> -->
                           <p class="position"><Strong><a href="mailto:ewa-napora@o2.pl?subject=Witam, z tej strony...">ewa-napora@o2.pl</a></Strong></p>
                         </div>
                       </blockquote>
@@ -177,7 +163,6 @@
                   <p>&ldquo;Sławni ludzie zazwyczaj nie mają problemu ze zdobyciem numerów innych sławnych ludzi.&rdquo; - Robert Galbraith</p>
                   <div class="author">
                     <img src="images/telefon.jpg" alt="Free template by TemplateUX">
-                    <!-- <h3>Telefon</h3> -->
                     <p class="position"><Strong><a href="tel://+48664357343">664 - 357 - 343<a></Strong></p>
                   </div>
                 </blockquote>
@@ -187,7 +172,6 @@
                   <p>&ldquo;Zawsze się wydaje, że w innym miejscu będzie lepiej.&rdquo; - Antoine de Saint-Exupéry</p>
                   <div class="author">
                     <img src="images/adres.png" alt="Free template by TemplateUX">
-                    <!-- <h3>Adres</h3> -->
                     <p class="position"><Strong>Kluczyce 21 A, 29-145 Secemin</Strong></p>
                   </div>
                 </blockquote>
@@ -199,14 +183,9 @@
     </div> 
 
     <div id="map" class="block-map-1"></div>
-    
     <footer class="templateux-footer">
         <div class="row pt-5 text-left">
           <div class="col-md-12 text-center">
-              <!-- <div class="malowanie">
-                  <img src="images/pedzelMalowanie.png">
-                  <p>naciśnij mnie</p>
-              </div> -->
               <div data-scroll="toggle(.scaleDownIn, .scaleDownOut)" class="toButtonOnTop">
                     <button class="buttonOnTop btn  btn-outline-gold py-2 px-4" onclick="toTop()"><img src="images/arrowUp.png" width="30px" height= "30px"><br></button>
               </div>
@@ -216,20 +195,9 @@
           </p>
         </div>
         </div> 
-
       </div>
-    </footer> 
-    <!-- <div id="adres">
-      <div class="textShowss">
-          <div class="a11">
-            <h11 class="textAdres"> <strong>Kontakt ze mną tradycyjny</strong></h11>				
-          </div>
-      </div>
-   </div> -->
-
-
+    </footer>
   </div> 
-
         <script src="js/ScrollTrigger.min.js"></script>
 				<script>
               window.counter = function() {
@@ -240,42 +208,14 @@
                 span.textContent = current + 1;
               };
 
-            document.addEventListener('DOMContentLoaded', function(){
-              var trigger = new ScrollTrigger({
-                addHeight: true
-              });
-            });
-         </script>
-              <script
-              src="https://code.jquery.com/jquery-3.3.1.min.js"
-              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-              crossorigin="anonymous"></script>
-        <script>
-          // Wrap every letter in a span
-              $('.textShowss .textAdres').each(function(){
-                  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='textAdres'>$&</span>"));
+              document.addEventListener('DOMContentLoaded', function(){
+                var trigger = new ScrollTrigger({
+                  addHeight: true
                 });
-                
-                anime.timeline({loop: true})
-                  .add({
-                    targets: '.textShowss .textAdres',
-                    translateY: ["1.1em", 0],
-                    translateX: ["0.55em", 0],
-                    translateZ: 0,
-                    rotateZ: [180, 0],
-                    duration: 900,
-                    easing: "easeOutExpo",
-                    delay: function(el, i) {
-                      return 50 * i;
-                    }
-                  }).add({
-                    targets: '.textShowss',
-                    opacity: 0,
-                    duration: 1000,
-                    easing: "easeOutExpo",
-                    delay: 1000
-                  });
-        </script>
+              });
+         </script>
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
   <script src="js/cliced.js"></script>
   <script src="js/ScrollTrigger.js"></script>
   <script src="js/scripts-all.js"></script>
@@ -284,7 +224,8 @@
   <script src="js/google-map.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script src="js/showElements.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
   </body>
 </html>

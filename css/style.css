@@ -241,9 +241,7 @@ a:hover{color:#000;text-decoration:none}
   transition: transform 2s ease-in-out;
 }
 /* adding transition and cover-parralax :hover */
-.cover-parallax-1 h3:hover{
-  transform: rotate(360deg);
-}
+
 .cover-parallax-1,.cover-parallax-1>.container>.row{min-height:800px}
 
 @media (min-width:768px){
@@ -255,7 +253,7 @@ a:hover{color:#000;text-decoration:none}
   background:#000;
   color:#fff;
   border:2px solid transparent;
-  border-radius: 60%}
+  }
 .btn.btn-black:hover{color:#000;background:transparent;border:2px solid #000}
 
 .btn.btn-black.btn-outline-gold{color:#000;background:transparent;border:2px solid #000}
