@@ -219,7 +219,7 @@ a:hover{color:#000;text-decoration:none}
 @media (min-width:768px){
   .templateux-header{padding:2em 0}}
   .templateux-header .templateux-logo a{
-    color: gold;
+    color: rgb(255, 234, 0);
     font-size:20px
   }
   .templateux-header.scrolled{position:fixed;padding:.3em 0;top:0;background:#fff;-webkit-transition:.0s all ease;-o-transition:.0s all ease;transition:.0s all ease;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-box-shadow:0 2px 4px 0px rgba(0, 0, 0, 0.05);box-shadow:0 2px 4px 0px rgba(0, 0, 0, 0.05)}.templateux-header.scrolled .templateux-logo a{color:#000}.templateux-header.scrolled .templateux-toggle{position:relative;top:5px}.templateux-header.scrolled .templateux-toggle .hamburger-box .hamburger-inner,.templateux-header.scrolled .templateux-toggle .hamburger-box .hamburger-inner:after,.templateux-header.scrolled .templateux-toggle .hamburger-box .hamburger-inner:before{background:#000}.templateux-header.awake{-webkit-transition:.3s all ease;-o-transition:.3s all ease;transition:.3s all ease;-webkit-transform:translateY(0%);-ms-transform:translateY(0%);transform:translateY(0%)}.templateux-header.sleep{-webkit-transition:.3s all ease;-o-transition:.3s all ease;transition:.3s all ease;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)}.templateux-menu{display:none;height:100vh;min-height:700px;background:black;left:0;right:0;bottom:0;top:0;z-index:21;position:fixed;overflow:auto!important}.templateux-menu ul{height:100vh;overflow:auto!important;position:relative;padding:10em 0 50em 0}.templateux-menu ul>li{list-style:none;visibility:hidden;opacity:0;padding:0;margin:0;top:-20px;position:relative;text-align:center;-webkit-transition:.3s all ease;-o-transition:.3s all ease;transition:.3s all ease}.templateux-menu ul>li.is-show{visibility:visible;opacity:1;top:0px}.templateux-menu ul>li a{font-size:18px;color:#fff}.templateux-menu ul>li a:hover{color:#fba83b}
@@ -237,7 +237,7 @@ a:hover{color:#000;text-decoration:none}
 
 .cover-parallax-1{position:relative;color:#fff;overflow:hidden}
 .cover-parallax-1 h3{
-  color:#fff;
+  color: rgb(255, 234, 0);
   cursor: pointer;
   transition: transform 2s ease-in-out;
 }
@@ -255,12 +255,12 @@ a:hover{color:#000;text-decoration:none}
   color:#fff;
   border:2px solid transparent;
   }
-.btn.btn-black:hover{color:#000;background:transparent;border:2px solid #000}
+.btn.btn-black:hover{color:#000;background:transparent;border:2px solid #424242}
 
 .btn.btn-black.btn-outline-gold{color:#000;background:transparent;border:2px solid #000}
 .btn.btn-black.btn-outline-gold:hover{color:red;border:2px solid transparent}
 
-.btn.btn-black.btn-outline-black{color:#000;background:transparent;border:2px solid #000}.btn.btn-black.btn-outline-black:hover{background:#000;color:#fff;border:2px solid transparent}
+.btn.btn-black.btn-outline-black{color:#424242;background:transparent;border:2px solid #424242}.btn.btn-black.btn-outline-black:hover{background:#424242;color:#fff;border:2px solid transparent}
 .btn.btn-white{background:#fff;color:#000;border:2px solid transparent}
 .btn.btn-white:hover{color:#fff;background:transparent;border:2px solid #fff}
 .btn.btn-white.btn-outline-white{color:#fff;background:transparent;border:2px solid #fff}
