@@ -1,7 +1,7 @@
 @media screen and (max-width: 1600px){
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 900px;
+        
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -11,12 +11,12 @@
     .testimonial-wrap .quote{
         line-height:1;
         position:relative;
-        font-size: 75px;
+        font-size: 1.5em;
         color:#000;
         text-align:center;
         margin-bottom: 10px}
     .block-testomonial .author .position{
-        font-size:30px;
+        font-size:1.25em;
         color: #000}
     .display-4{
         font-size:2rem;
@@ -39,10 +39,11 @@
     .testimonial-wrap .quote{
         line-height:1;
         position:relative;
-        font-size: 60px;
+        font-size: 1.5em;
         color:#000;
         text-align:center}
-        
+    .block-testomonial .author .position{
+        font-size:1.25em;} 
 }
 @media screen and (max-width: 800px){
     .bg-light{
@@ -58,11 +59,11 @@
     .testimonial-wrap .quote{
         line-height:1;
         position:relative;
-        font-size: 55px;
+        font-size: 1.5em;
         color:#000;
         text-align:center}
     .block-testomonial .author .position{
-        font-size:25px;
+        font-size: 1.25em;
         color: #000}
 }
 
@@ -80,7 +81,7 @@
     .testimonial-wrap .quote{
         line-height:1;
         position:relative;
-        font-size:50px;
+        font-size: 1.5em;
         color:#000;
         text-align:center}
 
@@ -101,7 +102,7 @@
     .testimonial-wrap .quote{
         line-height:1;
         position:relative;
-        font-size:40px;
+        font-size: 1.5em;
         color:#000;
         text-align:center}
 }
