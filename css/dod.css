@@ -38,3 +38,49 @@
    line-height: 1em;
    color:darkred;
    }
+
+   .templateux-section{
+     
+     padding: 3em;
+   }
+   .grid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   }
+   .grid:after {
+    content: '';
+    display: none;
+    clear: none;
+   }
+   h2{
+     color: #424242 !important;
+   }
+   .textAboutMe{
+    color:#424242;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-top: 0
+  }
+  .testimonial-wrap .quote{
+    color:#424242;
+  }
+  .block-testomonial .author .position{
+    color:#424242;
+  }
+  p.design{
+    color:#424242;
+  }
+  a{
+    color: #424242;
+  }
+  .mb-4title{
+    color: #ffea00 !important;
+  }
+  .block-thumbnail-1 .block-thumbnail-content h2{
+    color: #ffea00 !important;
+  }
+  .lead{
+    color: #ffea00 !important;
+  }
