@@ -38,7 +38,10 @@
    line-height: 1em;
    color:darkred;
    }
-
+   .bg-Main-Paintings{
+      height: auto !important;
+      padding: 4em;
+   }
    .bg-light-Main{
      height: 100% !important;
      background-color: #f8f9fa!important;
