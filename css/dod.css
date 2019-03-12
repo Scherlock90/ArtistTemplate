@@ -39,20 +39,20 @@
    color:darkred;
    }
 
-   .templateux-section{
-     
-     padding: 3em;
+   .bg-light-Main{
+     height: 100% !important;
+     background-color: #f8f9fa!important;
+     text-align: justify; 
    }
-   .grid{
-    display:flex;
-    justify-content: center;
+   .mySection{
     align-items: center;
-    height: auto;
+    justify-content: center;
+    display: flex; 
    }
-   .grid:after {
-    content: '';
-    display: none;
-    clear: none;
+   .myDescriptionPoetry{
+      color: #424242;
+      font-size: 1.25em;
+      text-indent: 20px;
    }
    h2{
      color: #424242 !important;

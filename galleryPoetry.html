@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/dod.css">
+    <link  rel="stylesheet" href="css/carouselReact.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
   </head>
   <body>
 
@@ -48,71 +54,15 @@
       </a>
     </div>    
 
-    <div class="templateux-section" id="next-section">      
-        <div id="gallery-content-center" class="grid">
-          <a href="images/Tomiki/1.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #1" data-fancybox="gallery">
-            <img src="images/Tomiki/1.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/2.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #2" data-fancybox="gallery">
-            <img src="images/Tomiki/2.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/3.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #3" data-fancybox="gallery">
-            <img src="images/Tomiki/3.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/4.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #4" data-fancybox="gallery">
-            <img src="images/Tomiki/4.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/5.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #5" data-fancybox="gallery">
-            <img src="images/Tomiki/5.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/6.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #6" data-fancybox="gallery">
-            <img src="images/Tomiki/6.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/7.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #7" data-fancybox="gallery">
-            <img src="images/Tomiki/7.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/8.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #8" data-fancybox="gallery">
-            <img src="images/Tomiki/8.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/9.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #9" data-fancybox="gallery">
-            <img src="images/Tomiki/9.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/10.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #10" data-fancybox="gallery">
-            <img src="images/Tomiki/10.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/11.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #11" data-fancybox="gallery">
-            <img src="images/Tomiki/11.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/12.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #12" data-fancybox="gallery">
-            <img src="images/Tomiki/12.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/13.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
-            <img src="images/Tomiki/13.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/14.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
-            <img src="images/Tomiki/14.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/15.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
-            <img src="images/Tomiki/15.jpg" alt="">
-          </a>
-          <a href="images/Tomiki/21.jpg" class="grid-item" data-caption="You can write a caption here describing your photo #13" data-fancybox="gallery">
-            <img src="images/Tomiki/21.jpg" alt="">
-          </a>
-        </div>      
-    </div>    
-
-    <div class="templateux-section"></div>
-    <div class="templateux-section bg-light">
+    <div class="templateux-section bg-light mySection" id="next-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 testimonial-wrap" data-aos="fade" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
-            <div class="quote">Dlaczego poezja?</div>
             <div class="owl-carousel wide-slider-testimonial">
               <div class="item">
                 <blockquote class="block-testomonial">
-                  <p>Poezja</p>
+                  <p class="quote">Poezja</p>
                   <div class="author">
-                    <img src="images/obrazy/pedzel.jpg" alt="Free template by TemplateUX">
                     <p class="position">
                       Poezja (z gr. ποίησις, poíesis – tworzenie, wytwórczość, sztuka poetycka) – wieloznaczny termin,
                        współcześnie stanowiący przede wszystkim określenie dzieł literackich nienapisanych prozą lub synonim liryki.
@@ -123,9 +73,8 @@
 
               <div class="item">
                 <blockquote class="block-testomonial">
-                  <p>Poezja i jej znaczenie</p>
+                  <p class="quote">Poezja i jej znaczenie</p>
                   <div class="author">
-                    <img src="images/obrazy/pedzel.jpg" alt="Free template by TemplateUX">
                     <p class="position">
                       Poezją możemy wyrazić wszystkie emocje, które okalają naszą duszę. 
                       Ponadto dzięki niej jesteśmy uchwycić i przekazać czytelnikowie piękno i wartość otaczającego nas świata.
@@ -139,7 +88,40 @@
       </div>
     </div>
 
-    
+    <div class="templateux-section sectionCarousel" >  
+      <div class="scene">
+        <div class="carousel">
+          <div class="carousel__cell"><img src="images/Tomiki/12.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/11.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/10.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/9.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/8.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/7.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/6.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/5.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/4.jpg" alt=""></div>
+          <div class="carousel__cell"><img src="images/Tomiki/3.jpg" alt=""></div>
+        </div>
+      </div>
+      <p style="text-align: center;">
+        <button class="previous-button btn btn-black btn-outline-black">Poprzedni</button>
+        <button class="next-button btn btn-black btn-outline-black">Następny</button>
+      </p>
+    </div>
+
+    <div class="templateux-section bg-light-Main" id="next-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 testimonial-wrap" data-aos="fade" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+            <div class="myDescriptionPoetry">
+              Pisząc wiersze wyrażam to, jak spotrzegam świat, zarówno z perspektywy dni minionych, jak i dni nadchodzących.
+              Staram się również uchwycić najważniejsze wartości, którymi się kieruję.
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="templateux-footer">    
         <div class="row pt-5 text-left">
           <div class="col-md-12 text-center">
@@ -159,30 +141,36 @@
 
   <script src="js/ScrollTrigger.min.js"></script>
   <script>
-  window.counter = function() {
-    var span = this.querySelector('span');
-    var current = parseInt(span.textContent);
+      window.counter = function() {
+            var span = this.querySelector('span');
+            var current = parseInt(span.textContent);
 
-    span.textContent = current + 1;
-  };
+            span.textContent = current + 1;
+          };
 
-  document.addEventListener('DOMContentLoaded', function(){
-  var trigger = new ScrollTrigger({
-    addHeight: true
-  });
-  });
+          document.addEventListener('DOMContentLoaded', function(){
+          var trigger = new ScrollTrigger({
+            addHeight: true
+         });
+      });
   </script>
   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 <script src="js/cliced.js"></script>
 <script src="js/ScrollTrigger.js"></script>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="js/carouselReact.js"></script>
   
   <script src="js/scripts-all.js"></script>
   <script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+</script>
+
 
   </body>
 </html>

@@ -197,7 +197,7 @@ a{-webkit-transition:.3s all ease;-o-transition:.3s all ease;transition:.3s all 
 a:hover{color:#000;text-decoration:none}
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{color:#000;line-height:1.5}
 .templateux-footer,
-.templateux-section{padding:7em 0;clear:both}
+.templateux-section{padding:2em 0;clear:both}
 .lead{
   font-size:18px;
   color: aqua;
@@ -208,7 +208,7 @@ a:hover{color:#000;text-decoration:none}
 @media (min-width:768px){.templateux-container-fullwidth{padding-left:0;padding-right:0}}.templateux-container-fullwidth .templateux-row-overlay{position:relative;left:auto;-webkit-transform:none;-ms-transform:none;transform:none;margin-left:-30px!important;margin-right:-30px!important}
 @media (min-width:576px){.templateux-container-fullwidth .templateux-row-overlay{margin-left:auto!important;margin-right:auto!important}}
 @media (min-width:992px){.templateux-container-fullwidth .templateux-row-overlay{position:absolute;top:0px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}}
-@media (max-width:767.98px){.templateux-container-fullwidth .templateux-row-overlay.container{width:auto!important}}.testimonial-wrap .quote{line-height:1;position:relative;font-size:100px;color:#000;text-align:center}.templateux-counter .templateux-number{display:block;font-size:50px;color:#000}.templateux-counter .templateux-label{text-transform:uppercase;color:#000;opacity:.5}.overlay-row{position:absolute;top:0}.grid{float:left;width:100%}
+@media (max-width:767.98px){.templateux-container-fullwidth .templateux-row-overlay.container{width:auto!important}}.testimonial-wrap .quote{line-height:1;position:relative;font-size:100px;color:#000;text-align:center}.templateux-counter .templateux-number{display:block;font-size:50px;color:#000}.templateux-counter .templateux-label{text-transform:uppercase;color:#000;opacity:.5}.overlay-row{position:absolute;top:0}.grid{width:100%}
 .grid .grid-item{width:300px;margin-bottom:10px;margin-left:10px;-webkit-transition:.0s all ease;-o-transition:.0s all ease;transition:.0s all ease}
 .grid .grid-item img{max-width:100%}
 .grid:after{content:'';display:block;clear:both}

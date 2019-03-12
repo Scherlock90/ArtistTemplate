@@ -1,6 +1,7 @@
 @media screen and (max-width: 1600px){
     .bg-light{
         background-color:#f8f9fa!important;
+        height: 400px;
         
     }
     a.bg-light:focus,
