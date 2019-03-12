@@ -8,11 +8,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #6e6e6e;
-	font-size: 12px;
-}
 
 li > img {
     border: 0;
