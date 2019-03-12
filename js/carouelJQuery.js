@@ -7,7 +7,6 @@ $(function(){
 
 
 	$('.slider').height($('.slider li img').height());
-  //$('.slider').height('300px');
 	
 	$('.slider img').on('load', function(){
     $('.loader').fadeOut();
@@ -24,8 +23,7 @@ $(function(){
 	$('.slider').append(function() {
 		$(this).append('<div class="navigator"></div>');
 		$(this).prepend('<span class="prev">Poprzedni</span><span class="next">Następny</span>');
-		//$(this).append('<div class="autoPlay"><input id="chkBox" type="checkbox" class="chkbox" /><label for="chkBox">Auto Play?</label></div>');
-
+		
 		$(this).find('li').each(function(){
 			$('.navigator').append('<span></span>');
 		});
@@ -66,7 +64,6 @@ $(function(){
 		});
 	}
 
-
 	function moveRight() {
 		$('.slider ul').animate({
 			left : leftIncrement + '%'
@@ -86,25 +83,6 @@ $(function(){
 			}
 		});
 	}
-
-
-	// $('.chkbox').click(function() {
-	// 	if($('.chkbox').is(':checked')) {
-	// 		$('.slider > span').hide();
-	// 		$(this).next('label').text('Auto Playing')
-	// 		invertalValue = setInterval(function() {
-	// 			moveLeft();
-	// 		}, 5000);
-	// 	} else {
-	// 		$(this).next('label').text('Auto Play?')
-	// 		if(liCount == 2) {
-	// 			$('.slider .next').show();
-	// 		} else if(liCount > 2){
-	// 			$('.slider > span').show();
-	// 		}
-	// 		clearInterval(invertalValue);
-	// 	}
-	// });
   
   if(liCount > 1) {
 		invertalValue = setInterval(function() {
@@ -121,5 +99,3 @@ $(function(){
 	});
 
 });
-
-/* Mamun khandaker */
