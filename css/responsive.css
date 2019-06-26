@@ -41,6 +41,9 @@
         padding: 2em;
         margin: 2em;
     }
+    .about-me-p{
+        text-indent: 1.25em;
+    }
 @media screen and (max-width: 899px){
     .bg-light{
         background-color:#f8f9fa!important;
