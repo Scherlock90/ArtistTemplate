@@ -27,6 +27,20 @@
         height: auto;
         }
     }
+    .main-row-about{
+        display: flex;
+        justify-content: center;
+    }
+    .header-about-me{
+        display: flex;
+        justify-content: center;
+        margin: 2em;
+        font-size: 200%;
+    }
+    #about-me-text{
+        padding: 2em;
+        margin: 2em;
+    }
 @media screen and (max-width: 899px){
     .bg-light{
         background-color:#f8f9fa!important;
