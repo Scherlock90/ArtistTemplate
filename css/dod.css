@@ -11,13 +11,10 @@
    font-family: 'Times New Roman', Times, serif;	
    color: darkslategrey; 	
   }
-  .textShowss {
-     
+  .textShowss {     
    position: relative;
    font-weight: 900;
-   font-size: 3.7em
-   
-   
+   font-size: 3.7em   
    }
    .textShowss .a11 {
    position: relative;
@@ -64,7 +61,7 @@
     color:#424242;
     text-align: justify;
     text-indent: 1.5em;
-    margin-top: 0
+    margin-top: 0;
   }
   .testimonial-wrap .quote{
     color:#424242;

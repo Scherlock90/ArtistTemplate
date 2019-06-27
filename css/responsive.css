@@ -47,10 +47,17 @@
         align-content: stretch;
         text-align: justify;
     }
+    .qoute-main{
+        font-size: 120%;
+        margin-bottom: 4em;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
 @media screen and (max-width: 899px){
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 700px;
+        height: auto;
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -69,7 +76,7 @@
 @media screen and (max-width: 800px){
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 500px;
+        height: auto;
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -91,7 +98,7 @@
 @media screen and (max-width: 599px){
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 500px;
+        height: auto;
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -105,13 +112,28 @@
         font-size: 1.5em;
         color:#000;
         text-align:center}
-
+    .qoute-main{
+        font-size: 100%;
+    }
+    .row{
+        margin: 0;
+    }
+    #about-me-text {
+        padding: 1em; 
+        margin: 1em;
+    }
+    .block-testomonial .author .position{
+        font-size: 100%;
+    }
+    .block-testomonial p{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 370px){
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 550px;
+        height: auto;
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -131,5 +153,11 @@
     #about-me-text{
         padding: 1em;
         margin: 1em;
+    }
+    .qoute-main{
+        font-size: 100%;
+    }
+    .block-testomonial .author .position{
+        font-size: 100%;
     }
 }
