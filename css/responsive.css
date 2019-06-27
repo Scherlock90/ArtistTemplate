@@ -1,8 +1,19 @@
 @media screen and (max-width: 2000px){
+    #about-me-text{
+        padding: 4em;
+        margin: 4em;
+        background-color: #f8f9fa!important;
+    }
+    #what-i-think{
+        display: flex;
+        align-items: center;
+        margin: 2em;
+        padding: 2em;
+        height: 300px;
+    }
     .bg-light{
         background-color:#f8f9fa!important;
-        height: 400px;
-        
+        height: 400px;        
     }
     a.bg-light:focus,
     a.bg-light:hover,
@@ -37,11 +48,6 @@
         margin: 2em;
         font-size: 200%;
     }
-    #about-me-text{
-        padding: 4em;
-        margin: 4em;
-        background-color: #f8f9fa!important;
-    }
     .about-me-p{
         text-indent: 1.25em;
         font-size: 110%;
@@ -50,7 +56,6 @@
     }
     .qoute-main{
         font-size: 120%;
-        margin-bottom: 4em;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
