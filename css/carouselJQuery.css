@@ -87,7 +87,11 @@ ul {
 .slider li img {
     width: 100%;
     max-width: 400px;
-    max-height: 400px;
+	max-height: 400px;
+}
+.image-paintings{
+	max-width: 400px;
+	border: solid #424242 10px;
 }
 
 .navigator {
